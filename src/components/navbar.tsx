@@ -13,6 +13,9 @@ const Navbar: React.FC = () => {
   const links = [
     ["/", "Homepage"],
     ["/programm", "Programm"],
+    ["/practical-info", "Pratical Info"],
+    ["/kontakt", "Kontakt"],
+    ["/faq", "FAQ"]
   ];
   return (
     <div className="navbar">
