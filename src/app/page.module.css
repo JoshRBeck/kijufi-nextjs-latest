@@ -227,3 +227,69 @@
     transform: rotate(0deg);
   }
 }
+
+/* Home Page CSS */
+.tiledContainer {
+  width: 100vw; /* Set the width to the full viewport width */
+  height: 100vh; /* Set the height to the full viewport height */
+  position: relative;
+}
+.headingNeu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+.tile1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #fafcfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chairImage,
+.cameraImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tile2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #d5e7e3;
+}
+.tile3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%; /* Half the width of the container */
+  height: 50%; /* Half the height of the container */
+  background-color: #fafcfb; /* Color for the bottom-left tile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%; /* Half the width of the container */
+  height: 50%; /* Half the height of the container */
+  background-color: #d5e7e3; /* Color for the bottom-right tile */
+}
+.title {
+  color: #e16848;
+  font-size: 2.7em;
+}
+.kinderFestival {
+  font-size: 2em;
+}

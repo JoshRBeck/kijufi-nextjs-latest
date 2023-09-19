@@ -6,17 +6,18 @@ import Youtube from "../images/Youtube.png"
 import M from "../images/M.png"
 import ZukunftsPaket from "../images/zukunftspaket.png"
 import byKijufi from "../images/by-kijufi.png"
+import styles from "../app/styles.module.css"
 
 const Footer: React.FC = () => {
   return (
     <div>
-      <div className="footer-top">
-        <div className="footer-top-left">
-          <Image src={ZukunftsPaket} alt="Zukunfts Paket Image" className="zukunft-image" />
-          <Image src={byKijufi} alt="Image of by Kijufi" className="by-kijufi-image" />
+      <div className={styles.footerTop}>
+        <div className={styles.footerTopLeft}>
+          <Image src={ZukunftsPaket} alt="Zukunfts Paket Image" className={styles.zukunftImage} />
+          <Image src={byKijufi} alt="Image of by Kijufi" className={styles.byKijufiImage} />
         </div>
-        <div className="footer-top-right">
-          <p className="footer-text">Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 is a project of 
+        <div className={styles.footerBottomRight}>
+          <p className={styles.footerText}>Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 is a project of 
           the Landesverband Kinder- und Jugendfilm Berlin e.V. (Kijufi). The implementation is funded within the 
           framework of the programme Das Zukunftspaket. Future Package. The Future Package for Movement, Culture 
           and Health is a programme of the Federal Ministry for Family Affairs, Senior Citizens, Women and Youth
@@ -25,25 +26,25 @@ const Footer: React.FC = () => {
            responsibility of the German Children and Youth Foundation (DKJS).</p>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="footer-bottom-links">
-          <ul className="footer-links-list">
+      <div className={styles.footerBottom}>
+        <div className={styles.footerBottomLinks}>
+          <ul className={styles.footerLinksList}>
             <li >
-              <Link href="/contact" className="footer-link">Kontakt</Link>
+              <Link href="/contact" className={styles.footerLink}>Kontakt</Link>
             </li>
             <li >
-              <Link href="/impressum" className="footer-link">Impressum</Link>
+              <Link href="/impressum" className={styles.footerLink}>Impressum</Link>
             </li>
             <li >
-              <Link href="/dataprotection" className="footer-link">Datenschutz</Link>
+              <Link href="/dataprotection" className={styles.footerLink}>Datenschutz</Link>
             </li>
           </ul>
         </div>
-        <div className="footer-bottom-socials">
-            <Image src={Instagram} alt="Instagram logo" className="social-icon" />
-            <Image src={Facebook} alt="Facebook" className="social-icon" />
-            <Image src={Youtube} alt="Youtube" className="social-icon" />
-            <Image src={M} alt="M Social Media" className="social-icon" />
+        <div className={styles.footerBottomSocials}>
+            <Image src={Instagram} alt="Instagram logo" className={styles.socialIcon}/>
+            <Image src={Facebook} alt="Facebook" className={styles.socialIcon}/>
+            <Image src={Youtube} alt="Youtube" className={styles.socialIcon}/>
+            <Image src={M} alt="M Social Media" className={styles.socialIcon}/>
         </div>
       </div>
     </div>

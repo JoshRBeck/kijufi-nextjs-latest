@@ -1,0 +1,189 @@
+/* NAVBAR Styling */
+.leftSection {
+  display: flex;
+  margin: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.kijufiImage {
+  margin-bottom: 15px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+.headerContainer {
+  display: flex;
+  margin: 0 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerMenu {
+  list-style: none;
+  display: flex;
+  align-content: center;
+}
+
+.headerMenuLi{
+  display: inline-block;
+  padding: 0 1.5rem;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.headerMenuLi a {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  color: royalblue;
+  overflow: hidden;
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.954),
+    rgba(0, 0, 0, 0.954) 50%,
+    rgba(0, 0, 0, 0.403) 50%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.headerMenuLi a:hover {
+  background-position: 0 100%;
+}
+
+.headerButton {
+  font-size: 24px;
+  color: white;
+  background-color: #e16848;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  width: auto;
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+.socialMedia {
+  display: flex;
+}
+
+/* Home Page CSS */
+.tiledContainer {
+  width: 100vw; /* Set the width to the full viewport width */
+  height: 100vh; /* Set the height to the full viewport height */
+  position: relative;
+}
+.headingNeu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+.tile1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #fafcfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chairImage,
+.cameraImage {
+  max-width: 100%;
+  max-height: 100%;
+}
+.tile2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #d5e7e3;
+}
+.tile3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%; /* Half the width of the container */
+  height: 50%; /* Half the height of the container */
+  background-color: #fafcfb; /* Color for the bottom-left tile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%; /* Half the width of the container */
+  height: 50%; /* Half the height of the container */
+  background-color: #d5e7e3; /* Color for the bottom-right tile */
+}
+.title {
+  color: #e16848;
+  font-size: 2.7em;
+}
+.kinderFestival {
+  font-size: 2em;
+}
+/* Footer CSS */
+.footerTop {
+  display: flex;
+  align-items: center;
+  background-color: #e16848;
+}
+.zukunftImage {
+  margin: 15px;
+}
+.byKijufiImage {
+  margin: 15px;
+}
+.footerText {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footerBottomLinks {
+  display: flex;
+}
+.footerLinktsList {
+  list-style: none;
+}
+.footerLiink {
+  text-decoration: none;
+  color: #333c3a;
+}
+.footerBottomSocials {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.socialIcon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
