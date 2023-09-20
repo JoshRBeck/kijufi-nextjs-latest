@@ -1,11 +1,42 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Chair from "@/images/chair.png";
 import Camera from "@/images/camera.png";
 import HeadingNeu from "../images/heading_neu.png";
+import { useEffect, useState } from "react";
 // import RootLayout from "./layout";
 
 export default function Home() {
+  const [countdownValue, setCountdownValue] = useState("");
+
+  useEffect(() => {
+    const targetDate = new Date("2023-12-08T10:00:00").getTime();
+    const countdown = setInterval(function () {
+      const currentDate = new Date().getTime();
+      const timeRemaining = targetDate - currentDate;
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+      const formattedCountdown = `${days} Tage ${hours} Stunden ${minutes} Minuten ${seconds} Sekunden`;
+
+      setCountdownValue(formattedCountdown);
+
+      if (timeRemaining <= 0) {
+        clearInterval(countdown);
+        setCountdownValue("Das Festival hat begonnen");
+      }
+    }, 1000);
+    return () => {
+      clearInterval(countdown);
+    };
+  }, []);
+
   return (
     <main className={styles.main}>
       <div>
@@ -37,6 +68,11 @@ export default function Home() {
           alt="New heading"
           className={styles.headingNeu}
         />
+      </div>
+      <div className={styles.countdownContainer}>
+        <div id="countdownContainer">
+          <p className={styles.countdownNumbers}>{countdownValue}</p>
+        </div>
       </div>
     </main>
   );

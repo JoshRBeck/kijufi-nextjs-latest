@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               const isActive = pathname === path;
               console.log({ pathname, path });
               return (
-                <li key={path}>
+                <li key={path} className={styles.footerLink}>
                   <Link
                     href={path}
                     className={styles.footerLink}
