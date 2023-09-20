@@ -347,12 +347,35 @@
     max-height: 300px;
   }
   .boxContent {
-    width: 300px;
+    width: 329px;
     height: 300px;
     background-color: #e16848;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .boxText {
+    text-align: center;
+  }
+  .boxText p {
+    padding: 5px;
+  }
+  .boxText h3 {
+    padding: 10px;
+  }
+  .mapIconSmall {
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+  }
+  .map {
+    width: 85%;
+    height: 400px;
+  }
+  .mapContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
