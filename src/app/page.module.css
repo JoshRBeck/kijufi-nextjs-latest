@@ -377,6 +377,17 @@
     display: flex;
     justify-content: center;
   }
+  .socialsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2efec;
+    text-align: center;
+  }
+  .kontaktSocialsKijufi {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
 }
 
 /* Tablet and Smaller Desktop */
