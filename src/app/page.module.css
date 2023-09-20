@@ -1,10 +1,13 @@
+/* Global Styles */
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
+  margin-top: 116px;
+  position: sticky;
 }
 
 .description {
@@ -97,7 +100,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -107,6 +110,10 @@
 .logo {
   position: relative;
 }
+.mainContent {
+  margin-top: 116px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -125,7 +132,7 @@
   }
 }
 
-/* Mobile */
+/* Mobile Styles */
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
@@ -184,7 +191,6 @@
       rgba(var(--callout-rgb), 0.5)
     );
     background-clip: padding-box;
-    backdrop-filter: blur(24px);
   }
 
   .description div {
@@ -200,6 +206,91 @@
     );
     z-index: 1;
   }
+
+  .tiledContainer {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Let content determine height */
+  }
+
+  .headingNeu {
+    top: 10%; /* Adjust the heading position for mobile */
+  }
+
+  .tile1,
+  .tile2,
+  .tile3,
+  .tile4 {
+    width: 100%; /* Full width on mobile */
+    height: 50vh; /* Half the viewport height */
+    position: absolute;
+  }
+  .chairImage {
+    max-width: 33%;
+    max-height: 33%;
+  }
+  /* footer styling */
+  .zukunftImage {
+    margin: 15px;
+  }
+  .byKijufiImage {
+    margin: 5px;
+  }
+  .footerText {
+    padding-left: 5px;
+    text-align: center;
+  }
+  .footerTopLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinksList {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .footerBottomSocials {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footerLink {
+    padding: 5px;
+  }
+  .socialIcon {
+    margin-bottom: 5px;
+  }
+  /* Datenschutzerklarung page */
+  .datenschutzTitle {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  .datenschutzHeadings {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+  }
+  .datenschutzParagraphs {
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 10px;
+  }
+  .datenschutzList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px;
+  }
+  .datenschutzListItems {
+    margin: 5px 0;
+    font-size: 0.8em;
+  }
+  .datenschutzOrderedList {
+    list-style: decimal;
+    padding-left: 20px;
+    margin: 10px;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -209,6 +300,7 @@
   }
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
@@ -219,77 +311,72 @@
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+/* Additional Styles */
+.kijufiImage {
+  margin-top: 25px;
+  margin-left: 40px;
 }
 
-/* Home Page CSS */
-.tiledContainer {
-  width: 100vw; /* Set the width to the full viewport width */
-  height: 100vh; /* Set the height to the full viewport height */
-  position: relative;
+.socialIcon {
+  margin: 7px;
 }
-.headingNeu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 1;
+
+.footerTop {
+  background-color: #e16848;
 }
+
+.footerLinksList {
+  list-style-type: none;
+}
+
+.footerText {
+  padding: 15px;
+}
+
+.footerTopLeft {
+  padding-left: 10px;
+}
+
+.byKijufiImage {
+  padding-top: 10px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #e16848;
+}
+/* Tiled Container */
 .tile1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
   background-color: #fafcfb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
 }
-.chairImage,
-.cameraImage {
-  max-width: 100%;
-  max-height: 100%;
+
+.tile3 {
+  background-color: #fafcfb;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
 }
+
 .tile2 {
-  position: absolute;
+  background-color: #d5e7e3;
   top: 0;
   right: 0;
   width: 50%;
   height: 50%;
-  background-color: #d5e7e3;
 }
-.tile3 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%; /* Half the width of the container */
-  height: 50%; /* Half the height of the container */
-  background-color: #fafcfb; /* Color for the bottom-left tile */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .tile4 {
-  position: absolute;
+  background-color: #d5e7e3;
   bottom: 0;
   left: 0;
-  width: 50%; /* Half the width of the container */
-  height: 50%; /* Half the height of the container */
-  background-color: #d5e7e3; /* Color for the bottom-right tile */
-}
-.title {
-  color: #e16848;
-  font-size: 2.7em;
-}
-.kinderFestival {
-  font-size: 2em;
+  width: 50%;
+  height: 50%;
 }
