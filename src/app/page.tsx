@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.tiledContainer}>
           <div className={styles.topTiles}>
             <div className={styles.tile1}>
-              Hello
+             
               <Image src={Chair} alt="chair" className={styles.chairImage} />
             </div>
             <div className={styles.tile2}>hello</div>

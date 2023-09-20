@@ -12,7 +12,7 @@ import styles from "../app/page.module.css";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const isMobile = window.innerWidth <= 1025;
+  const [isMobile, setIsMobile] = useState(false)
   const pathname = usePathname();
   const links = [
     ["/", "Homepage"],
@@ -29,17 +29,17 @@ const Navbar: React.FC = () => {
 
   console.log("isOpen:", isOpen);
   console.log("styles.headerMenu:", styles.headerMenu);
-  // const checkIsMobile = () => {
-  //   setIsMobile(window.innerWidth <= 1024);
-  // };
+  const checkIsMobile = () => {
+    setIsMobile(window.innerWidth <= 1024);
+  };
 
-  // useEffect(() => {
-  //   checkIsMobile();
-  //   window.addEventListener("resize", checkIsMobile);
-  //   return () => {
-  //     window.removeEventListener("resize", checkIsMobile);
-  //   };
-  // }, []);
+  useEffect(() => {
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
 
   return (
     <nav>
