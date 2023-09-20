@@ -19,22 +19,24 @@ export default function Home() {
         <div className={styles.tiledContainer}>
           <div className={styles.topTiles}>
             <div className={styles.tile1}>
-             
               <Image src={Chair} alt="chair" className={styles.chairImage} />
             </div>
-            <div className={styles.tile2}>hello</div>
+            <div className={styles.tile2}></div>
           </div>
           <div className={styles.tile3}>
-            {/* <Image src={Camera} alt="camera image" /> */}
-            hello
+            <Image
+              src={Camera}
+              alt="camera image"
+              className={styles.cameraImage}
+            />
           </div>
-          <div className={styles.tile4}>hello</div>
+          <div className={styles.tile4}></div>
         </div>
-        {/* <Image
+        <Image
           src={HeadingNeu}
           alt="New heading"
           className={styles.headingNeu}
-        /> */}
+        />
       </div>
     </main>
   );

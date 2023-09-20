@@ -12,7 +12,7 @@ import styles from "../app/page.module.css";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
   const links = [
     ["/", "Homepage"],
@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
     ["/practical-info", "Pratical Info"],
     ["/kontakt", "Kontakt"],
     ["/faq", "FAQ"],
+    ["/impressum", "Impressum"],
   ];
 
   const toggleMenu = () => {
@@ -50,11 +51,7 @@ const Navbar: React.FC = () => {
             <div className={styles.burgerLine}></div>
             <div className={styles.burgerLine}></div>
           </button>
-          <ul
-            className={`${styles.headerMenu}  ${
-              isOpen ? "active" : ""
-            }`}
-          >
+          <ul className={`${styles.headerMenu}  ${isOpen ? "active" : ""}`}>
             {links.map(([path, text]) => {
               const isActive = pathname === path;
               console.log({ pathname, path });

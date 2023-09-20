@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Instagram from "../images/Instagram.png";
 import Facebook from "../images/Facebook.png";
@@ -9,6 +11,13 @@ import byKijufi from "../images/by-kijufi.png";
 import styles from "../app/page.module.css";
 
 const Footer: React.FC = () => {
+  const pathname = usePathname();
+  const links = [
+    ["/kontakt", "Kontakt"],
+    ["/impressum", "Impressum"],
+    ["/datenschutz", "Datenschutz"],
+  ];
+
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footerTop}>
@@ -42,21 +51,21 @@ const Footer: React.FC = () => {
       <div className={styles.footerBottom}>
         <div className={styles.footerBottomLinks}>
           <ul className={styles.footerLinksList}>
-            <li className={styles.footerLink}>
-              <Link href="/contact" className={styles.footerLink}>
-                Kontakt
-              </Link>
-            </li>
-            <li className={styles.footerLink}>
-              <Link href="/impressum" className={styles.footerLink}>
-                Impressum
-              </Link>
-            </li>
-            <li className={styles.footerLink}>
-              <Link href="/dataprotection" className={styles.footerLink}>
-                Datenschutz
-              </Link>
-            </li>
+            {links.map(([path, text]) => {
+              const isActive = pathname === path;
+              console.log({ pathname, path });
+              return (
+                <li key={path}>
+                  <Link
+                    href={path}
+                    className={styles.footerLink}
+                    data-active={isActive}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className={styles.footerBottomSocials}>
@@ -75,3 +84,22 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+{
+  /* <li className={styles.footerLink}> */
+}
+
+{
+  /* <Link href="/contact" className={styles.footerLink}>
+                Kontakt
+              </Link>
+            </li>
+            <li className={styles.footerLink}>
+              <Link href="/impressum" className={styles.footerLink}>
+                Impressum
+              </Link>
+            </li>
+            <li className={styles.footerLink}>
+              <Link href="/dataprotection" className={styles.footerLink}>
+                Datenschutz
+              </Link> */
+}

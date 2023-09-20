@@ -6,7 +6,7 @@
   align-items: center;
   padding: 1rem;
   min-height: 100vh;
-  margin-top: 116px;
+  margin-top: 136px;
   position: sticky;
 }
 
@@ -111,7 +111,7 @@
   position: relative;
 }
 .mainContent {
-  margin-top: 116px;
+  margin-top: 135px;
 }
 
 /* Enable hover only on non-touch devices */
@@ -208,12 +208,16 @@
   }
 
   .tiledContainer {
-    width: 100%; /* Full width on mobile */
-    height: auto; /* Let content determine height */
+    width: 100%;
+    height: auto;
   }
 
   .headingNeu {
-    top: 10%; /* Adjust the heading position for mobile */
+    position: absolute;
+    z-index: 2;
+    max-width: 35%;
+    max-height: 20%;
+    transform: translate(80%, 150%);
   }
 
   .tile1,
@@ -224,9 +228,23 @@
     height: 50vh; /* Half the viewport height */
     position: absolute;
   }
+  .tile1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tile3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .chairImage {
-    max-width: 33%;
-    max-height: 33%;
+    max-width: 40%;
+    max-height: 40%;
+  }
+  .cameraImage {
+    max-width: 40%;
+    max-height: 40%;
   }
   /* footer styling */
   .zukunftImage {
@@ -290,6 +308,30 @@
     list-style: decimal;
     padding-left: 20px;
     margin: 10px;
+  }
+  /* Impressum page */
+  .impressumContainer {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 5px;
+  }
+  .impressumParagraph {
+    margin: 10px 0;
+  }
+  .impressumList {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .impressumListItem {
+    margin: 5px 0;
+  }
+  .impressumLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .impressumLink:hover {
+    text-decoration: underline;
   }
 }
 
