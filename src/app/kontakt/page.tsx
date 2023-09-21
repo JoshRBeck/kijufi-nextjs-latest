@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "../page.module.css";
 import Image from "next/image";
 import filmTheater from "@/images/filmtheateramfriedrichshain.jpg";
@@ -37,6 +37,31 @@ export default function Kontakt() {
     }, []);
 
     return <div id="map" className={styles.map} />;
+  };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    betreff: "",
+    nachricht: "",
+  });
+  const handleInputChange = (e: { target: { name: any; value: any } }) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      console.log("Email Sent Successfully!");
+    } else {
+      console.log("Email sending failed");
+    }
   };
 
   return (
@@ -105,6 +130,56 @@ export default function Kontakt() {
           <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
           <Image src={M} alt="M Social Media" className={styles.socialIcon} />
         </div>
+      </div>
+      {/* Container for Kontakt form */}
+      <div>
+        <form onSubmit={handleSubmit} className={styles.formContainer}>
+        <h2 className={styles.formTitle}>Wir freuen uns von dir zu hören!</h2>
+          <div className={styles.formField}>
+            <label htmlFor="name">Dein Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              className={styles.inputField}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="email">Deine Email Addresse</label>
+            <input
+              type="text"
+              id="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              className={styles.inputField}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="betreff">Betreff:</label>
+            <textarea
+              id="betreff"
+              name="betreff"
+              value={formData.betreff}
+              onChange={handleInputChange}
+              className={styles.textAreaField}
+            />
+          </div>
+          <div className={styles.formField}>
+            <label htmlFor="nachricht">Nachricht:</label>
+            <textarea
+              id="nachricht"
+              name="nachricht"
+              value={formData.nachricht}
+              onChange={handleInputChange}
+              className={styles.textAreaField}
+            />
+          </div>
+          <button type="submit" className={styles.submitButton}>
+            Senden
+          </button>
+        </form>
       </div>
     </div>
   );
