@@ -69,14 +69,26 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className={styles.footerBottomSocials}>
-          <Image
-            src={Instagram}
-            alt="Instagram logo"
-            className={styles.socialIcon}
-          />
-          <Image src={Facebook} alt="Facebook" className={styles.socialIcon} />
-          <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
-          <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+          <div className={styles.socialIconContainer}>
+            <Image
+              src={Instagram}
+              alt="Instagram logo"
+              className={styles.socialIcon}
+            />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image
+              src={Facebook}
+              alt="Facebook"
+              className={styles.socialIcon}
+            />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+          </div>
         </div>
       </div>
     </div>

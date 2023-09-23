@@ -131,6 +131,128 @@
     transform: none;
   }
 }
+/* Larger than 700px styles */
+@media (min-width: 701px) {
+  /* Footer desktop styles */
+  .footerTop {
+    display: flex;
+    align-items: center;
+    background-color: #e16848;
+  }
+  .zukunftImage {
+    margin: 15px;
+  }
+  .byKijufiImage {
+    margin: 15px;
+  }
+  .footerText {
+    font-weight: 600;
+    font-size: 1em;
+  }
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerBottomLinks {
+    display: flex;
+  }
+  .footerLinktsList {
+    list-style: none;
+  }
+  .footerLiink {
+    text-decoration: none;
+    color: #333c3a;
+  }
+  .footerBottomSocials {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .socialIcon {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  /* Impressum desktop styles */
+  .impressumContainer {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 800px; /* Limit the maximum width for better readability */
+  }
+  .impressumParagraph {
+    margin: 15px 0; /* Increase margin for better spacing */
+    font-size: 1em; /* Increase font size */
+    text-align: center;
+  }
+  .impressumList {
+    list-style-type: disc;
+    padding-left: 30px; /* Increase left padding for better alignment */
+    margin: 15px 0; /* Increase margin */
+    list-style-position: inside;
+  }
+  .impressumListItem {
+    margin: 8px 0; /* Slightly adjust item margin */
+    font-size: 1em; /* Increase font size */
+  }
+  .impressumLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .impressumLink:hover {
+    text-decoration: underline;
+  }
+  /* Datenschutz desktop styles */
+  .datenschutzTitle {
+    text-align: center;
+    font-size: 2em; /* Increase font size for larger screens */
+    padding: 20px; /* Increase padding for better spacing */
+  }
+
+  .datenschutzHeadings {
+    font-size: 1.8em; /* Increase font size */
+    text-align: center;
+    padding: 15px; /* Increase padding */
+  }
+
+  .datenschutzParagraphs {
+    font-size: 1em; /* Increase font size */
+    text-align: justify;
+    margin: 15px; /* Increase margin */
+  }
+
+  .datenschutzList {
+    list-style-type: disc;
+    padding-left: 30px; /* Increase left padding for better alignment */
+    margin: 15px; /* Increase margin */
+  }
+
+  .datenschutzListItems {
+    margin: 8px 0; /* Slightly adjust item margin */
+    font-size: 1em; /* Increase font size */
+  }
+
+  .datenschutzOrderedList {
+    list-style: decimal;
+    padding-left: 30px; /* Increase left padding */
+    margin: 15px; /* Increase margin */
+  }
+  /* Kontakt page desktop styling */
+  .boxImageContent {
+    height: 100px;
+    width: 100px;
+  }
+  .kontaktContainer {
+    display: flex;
+    justify-content: space-between; /* Space evenly between boxes */
+    align-items: flex-start; /* Align boxes at the top */
+    max-width: 1000px; /* Optional: Limit the maximum width of the boxes */
+    margin: 0 auto; /* Optional: Center the container horizontally */
+  }
+  .box {
+    display: flex;
+  }
+}
 
 /* Mobile Styles */
 @media (max-width: 700px) {
@@ -389,8 +511,6 @@
     margin-top: 10px;
   }
   /* Kontakt form styling */
-  /* styles.module.css */
-
   .formContainer {
     max-width: 400px;
     margin: 0 auto;

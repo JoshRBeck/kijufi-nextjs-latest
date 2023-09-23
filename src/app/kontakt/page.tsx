@@ -12,12 +12,13 @@ import M from "@/images/M.png";
 declare const google: any;
 
 export default function Kontakt() {
+  const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   const Map = () => {
     useEffect(() => {
       // Define the google object
       // Load the Google Maps JavaScript API using your API key
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAGfK3aXQyHUJJuRZHFiUslO8vQjI6NcxY&libraries=places`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=places`;
       script.async = true;
       document.head.appendChild(script);
 
@@ -66,32 +67,34 @@ export default function Kontakt() {
 
   return (
     <div>
-      {/* Box for Filmvorführungen */}
-      <div className={styles.box}>
-        <h1 className={styles.boxTitle}>Für die Filmvorführungen!</h1>
-        <div className={styles.boxImage}>
-          <Image
-            src={filmTheater}
-            alt="film theater"
-            className={styles.boxImageContent}
-          />
-        </div>
-        <div className={styles.boxText}>
-          <h3>Filmtheater am Friedrichshain</h3>
-          <p>
-            Bötzowstraße 1-5, 10407 Berlin
-            <FontAwesomeIcon
-              icon={faLocationDot}
-              style={{ color: "#C20000" }}
-              className={styles.mapIconSmall}
+      <div className={styles.kontaktContainer}>
+        {/* Box for Filmvorführungen */}
+        <div className={styles.box}>
+          <h1 className={styles.boxTitle}>Für die Filmvorführungen!</h1>
+          <div className={styles.boxImage}>
+            <Image
+              src={filmTheater}
+              alt="film theater"
+              className={styles.boxImageContent}
             />
-          </p>
+          </div>
+          <div className={styles.boxText}>
+            <h3>Filmtheater am Friedrichshain</h3>
+            <p>
+              Bötzowstraße 1-5, 10407 Berlin
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#C20000" }}
+                className={styles.mapIconSmall}
+              />
+            </p>
+          </div>
         </div>
-      </div>
-      {/* Box for Festival */}
-      <div className={styles.box}>
-        <h1 className={styles.boxTitle}>Für das Festival!</h1>
-        <div className={styles.boxContent}>Temporary Box</div>
+        {/* Box for Festival */}
+        <div className={styles.box}>
+          <h1 className={styles.boxTitle}>Für das Festival!</h1>
+          <div className={styles.boxContent}>Temporary Box</div>
+        </div>
       </div>
       <div className={styles.boxText}>
         <h3>Jugendkulturzentrum Königstadt</h3>
@@ -134,7 +137,7 @@ export default function Kontakt() {
       {/* Container for Kontakt form */}
       <div>
         <form onSubmit={handleSubmit} className={styles.formContainer}>
-        <h2 className={styles.formTitle}>Wir freuen uns von dir zu hören!</h2>
+          <h2 className={styles.formTitle}>Wir freuen uns von dir zu hören!</h2>
           <div className={styles.formField}>
             <label htmlFor="name">Dein Name:</label>
             <input
