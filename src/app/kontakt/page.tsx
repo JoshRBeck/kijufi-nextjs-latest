@@ -15,24 +15,18 @@ export default function Kontakt() {
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
   const Map = () => {
     useEffect(() => {
-      // Define the google object
-      // Load the Google Maps JavaScript API using your API key
       const script = document.createElement("script");
       script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=places`;
       script.async = true;
       document.head.appendChild(script);
-
       script.onload = () => {
-        // Initialize and customize your Google Map here
         const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 52.52933254861146, lng: 13.430516771164287 },
           zoom: 8,
         });
         // Add markers, polygons, or other map features
       };
-
       return () => {
-        // Clean up
         document.head.removeChild(script);
       };
     }, []);
@@ -52,12 +46,10 @@ export default function Kontakt() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-
     const response = await fetch("/api/send-email", {
       method: "POST",
       body: JSON.stringify(formData),
     });
-
     if (response.ok) {
       console.log("Email Sent Successfully!");
     } else {

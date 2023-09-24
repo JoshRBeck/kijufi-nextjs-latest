@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    // <Suspense fallback={<div>Loading...</div>}>
       <main className={styles.main}>
         <div>
           <div className={styles.titleContainer}>
@@ -76,6 +76,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </Suspense>
+    // </Suspense>
   );
 }

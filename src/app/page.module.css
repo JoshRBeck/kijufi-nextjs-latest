@@ -1,5 +1,137 @@
+/* Halcyon Black Fonts */
+@font-face {
+  font-family: "Halcyon Black";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-black.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Black";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-blackitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Bold Fonts */
+@font-face {
+  font-family: "Halcyon Bold";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Bold";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-bolditalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Hairline Fonts */
+@font-face {
+  font-family: "Halcyon Hairline";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-hairline.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Hairline";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-hairlineitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Light Fonts */
+@font-face {
+  font-family: "Halcyon Light";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-light.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Light";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-lightitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Medium Fonts */
+@font-face {
+  font-family: "Halcyon Medium";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-medium.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Medium";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-mediumitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Regular Fonts */
+@font-face {
+  font-family: "Halcyon Regular";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-regular.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Regular";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-regularitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Semibold Fonts */
+@font-face {
+  font-family: "Halcyon Semibold";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-semibold.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Semibold";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-semibolditalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Halcyon Thin Fonts */
+@font-face {
+  font-family: "Halcyon Thin";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-thin.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halcyon Thin";
+  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-thinitalic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* Global Styles */
-/* .main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,7 +140,7 @@
   min-height: 100vh;
   margin-top: 136px;
   position: sticky;
-} */
+}
 
 .description {
   display: inherit;
@@ -177,23 +309,23 @@
   .impressumContainer {
     text-align: center;
     padding: 20px;
-    margin: 0 auto; 
-    max-width: 800px; 
+    margin: 0 auto;
+    max-width: 800px;
   }
   .impressumParagraph {
-    margin: 15px 0; 
-    font-size: 1em; 
+    margin: 15px 0;
+    font-size: 1em;
     text-align: center;
   }
   .impressumList {
     list-style-type: disc;
-    padding-left: 30px; 
-    margin: 15px 0; 
+    padding-left: 30px;
+    margin: 15px 0;
     list-style-position: inside;
   }
   .impressumListItem {
-    margin: 8px 0; 
-    font-size: 1em; 
+    margin: 8px 0;
+    font-size: 1em;
   }
   .impressumLink {
     color: #007bff;
@@ -205,37 +337,37 @@
   /* Datenschutz desktop styles */
   .datenschutzTitle {
     text-align: center;
-    font-size: 2em; 
-    padding: 20px; 
+    font-size: 2em;
+    padding: 20px;
   }
 
   .datenschutzHeadings {
-    font-size: 1.8em; 
+    font-size: 1.8em;
     text-align: center;
-    padding: 15px; 
+    padding: 15px;
   }
 
   .datenschutzParagraphs {
-    font-size: 1em; 
+    font-size: 1em;
     text-align: justify;
-    margin: 15px; 
+    margin: 15px;
   }
 
   .datenschutzList {
     list-style-type: disc;
-    padding-left: 30px; 
-    margin: 15px; 
+    padding-left: 30px;
+    margin: 15px;
   }
 
   .datenschutzListItems {
-    margin: 8px 0; 
-    font-size: 1em; 
+    margin: 8px 0;
+    font-size: 1em;
   }
 
   .datenschutzOrderedList {
     list-style: decimal;
-    padding-left: 30px; 
-    margin: 15px; 
+    padding-left: 30px;
+    margin: 15px;
   }
   /* Kontakt page desktop styling */
   .boxImageContent {
@@ -244,10 +376,10 @@
   }
   .kontaktContainer {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    max-width: 1000px; 
-    margin: 0 auto; 
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .box {
     display: flex;
@@ -330,16 +462,16 @@
     z-index: 2;
     max-width: 35%;
     max-height: 20%;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
   .tile1,
   .tile2,
   .tile3,
   .tile4 {
-    width: 100%; 
-    height: 50vh; 
+    width: 100%;
+    height: 50vh;
     position: absolute;
   }
   .tile1 {
@@ -392,6 +524,54 @@
   }
   .socialIcon {
     margin-bottom: 5px;
+  }
+  /* Filmeinreichung Page Mobile */
+  .filmeinreichungTopContainer {
+    padding: 10%;
+  }
+  .filmeinreichungTopContainer h1 {
+    padding-bottom: 10px;
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .filmeinreichungTopContainer h4 {
+    padding-bottom: 10px;
+    font-family: "Halcyon Black", sans-serif;
+    font-weight: 400;
+  }
+  .filmeinreichungTopContainer p {
+    padding-bottom: 10px;
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .filmEinreichungCamera img {
+    height: 35%;
+    width: 35%;
+    padding-left: 10%;
+  }
+  .richtLinienContainer {
+    margin: 10%;
+  }
+  .richtLinienContainer h2 {
+    margin-top: 10px;
+  }
+  .schritteContainer {
+    background-color: #5ba092;
+    padding: 10%;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .schritteNummer {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .schritteName {
+    text-align: center;
+    font-weight: 700;
+  }
+  .schritteBeschreibung {
+    text-align: center;
+    padding-top: 5px;
   }
   /* Datenschutzerklarung page */
   .datenschutzTitle {
@@ -533,7 +713,7 @@
   }
   .inputField:focus,
   .textAreaField:focus {
-    border-color: #007bff; 
+    border-color: #007bff;
     outline: none;
   }
   .submitButton {
@@ -546,7 +726,7 @@
     transition: background-color 0.2s;
   }
   .submitButton:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
   }
 }
 
@@ -637,4 +817,29 @@
 /* Countdown styling */
 .countdownNumbers {
   color: #e16848;
+}
+/* Film Einreichung Containers */
+.schritteColorOne {
+  color: #5ba092;
+}
+.schritteColorTwo {
+  color: #f6cc5e;
+}
+.schritteColorThree {
+  color: #e16848;
+}
+.schritteColorFour {
+  color: #5ba092;
+}
+.schritteColorFive {
+  color: #f6cc5e;
+}
+.schritteColorSix {
+  color: #ffcaaf;
+}
+.schritteColorSeven {
+  color: #d5e7e3;
+}
+.schritteColorEight {
+  color: #fae8df;
 }

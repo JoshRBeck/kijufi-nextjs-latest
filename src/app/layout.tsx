@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    // <Suspense fallback={<div>Loading...</div>}>
       <html lang="en">
         <Head>
           <meta
@@ -34,6 +34,6 @@ export default function RootLayout({
           <Footer />
         </body>
       </html>
-    </Suspense>
+    // </Suspense>
   );
 }
