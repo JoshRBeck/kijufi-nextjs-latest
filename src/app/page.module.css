@@ -177,23 +177,23 @@
   .impressumContainer {
     text-align: center;
     padding: 20px;
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 800px; /* Limit the maximum width for better readability */
+    margin: 0 auto; 
+    max-width: 800px; 
   }
   .impressumParagraph {
-    margin: 15px 0; /* Increase margin for better spacing */
-    font-size: 1em; /* Increase font size */
+    margin: 15px 0; 
+    font-size: 1em; 
     text-align: center;
   }
   .impressumList {
     list-style-type: disc;
-    padding-left: 30px; /* Increase left padding for better alignment */
-    margin: 15px 0; /* Increase margin */
+    padding-left: 30px; 
+    margin: 15px 0; 
     list-style-position: inside;
   }
   .impressumListItem {
-    margin: 8px 0; /* Slightly adjust item margin */
-    font-size: 1em; /* Increase font size */
+    margin: 8px 0; 
+    font-size: 1em; 
   }
   .impressumLink {
     color: #007bff;
@@ -205,37 +205,37 @@
   /* Datenschutz desktop styles */
   .datenschutzTitle {
     text-align: center;
-    font-size: 2em; /* Increase font size for larger screens */
-    padding: 20px; /* Increase padding for better spacing */
+    font-size: 2em; 
+    padding: 20px; 
   }
 
   .datenschutzHeadings {
-    font-size: 1.8em; /* Increase font size */
+    font-size: 1.8em; 
     text-align: center;
-    padding: 15px; /* Increase padding */
+    padding: 15px; 
   }
 
   .datenschutzParagraphs {
-    font-size: 1em; /* Increase font size */
+    font-size: 1em; 
     text-align: justify;
-    margin: 15px; /* Increase margin */
+    margin: 15px; 
   }
 
   .datenschutzList {
     list-style-type: disc;
-    padding-left: 30px; /* Increase left padding for better alignment */
-    margin: 15px; /* Increase margin */
+    padding-left: 30px; 
+    margin: 15px; 
   }
 
   .datenschutzListItems {
-    margin: 8px 0; /* Slightly adjust item margin */
-    font-size: 1em; /* Increase font size */
+    margin: 8px 0; 
+    font-size: 1em; 
   }
 
   .datenschutzOrderedList {
     list-style: decimal;
-    padding-left: 30px; /* Increase left padding */
-    margin: 15px; /* Increase margin */
+    padding-left: 30px; 
+    margin: 15px; 
   }
   /* Kontakt page desktop styling */
   .boxImageContent {
@@ -244,10 +244,10 @@
   }
   .kontaktContainer {
     display: flex;
-    justify-content: space-between; /* Space evenly between boxes */
-    align-items: flex-start; /* Align boxes at the top */
-    max-width: 1000px; /* Optional: Limit the maximum width of the boxes */
-    margin: 0 auto; /* Optional: Center the container horizontally */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1000px; 
+    margin: 0 auto; 
   }
   .box {
     display: flex;
@@ -330,16 +330,16 @@
     z-index: 2;
     max-width: 35%;
     max-height: 20%;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
   }
   .tile1,
   .tile2,
   .tile3,
   .tile4 {
-    width: 100%; /* Full width on mobile */
-    height: 50vh; /* Half the viewport height */
+    width: 100%; 
+    height: 50vh; 
     position: absolute;
   }
   .tile1 {
@@ -533,7 +533,7 @@
   }
   .inputField:focus,
   .textAreaField:focus {
-    border-color: #007bff; /* Change the border color on focus */
+    border-color: #007bff; 
     outline: none;
   }
   .submitButton {
@@ -546,7 +546,7 @@
     transition: background-color 0.2s;
   }
   .submitButton:hover {
-    background-color: #0056b3; /* Change the background color on hover */
+    background-color: #0056b3; 
   }
 }
 
