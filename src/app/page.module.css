@@ -252,107 +252,61 @@
 @media (min-width: 701px) {
   /* Footer desktop styles */
   .footerTop {
-    display: flex;
-    align-items: center;
     background-color: #e16848;
   }
-  .zukunftImage {
-    margin: 15px;
-  }
-  .byKijufiImage {
-    margin: 15px;
-  }
-  .footerText {
+  .footerText,
+  .footerLiink {
     font-weight: 600;
     font-size: 1em;
   }
-  .footerBottom {
-    display: flex;
-    justify-content: space-between;
-  }
   .footerBottomLinks {
     display: flex;
-  }
-  .footerLinktsList {
     list-style: none;
   }
-  .footerLiink {
+  .footerLink {
     text-decoration: none;
     color: #333c3a;
   }
-  .footerBottomSocials {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-  }
-  .socialIcon {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
   /* Impressum desktop styles */
   .impressumContainer {
-    text-align: center;
     padding: 20px;
     margin: 0 auto;
     max-width: 800px;
   }
-  .impressumParagraph {
+  .impressumParagraph,
+  .impressumListItem {
     margin: 15px 0;
     font-size: 1em;
     text-align: center;
   }
   .impressumList {
-    list-style-type: disc;
     padding-left: 30px;
     margin: 15px 0;
     list-style-position: inside;
   }
-  .impressumListItem {
-    margin: 8px 0;
-    font-size: 1em;
-  }
-  .impressumLink {
-    color: #007bff;
-    text-decoration: none;
-  }
-  .impressumLink:hover {
-    text-decoration: underline;
-  }
   /* Datenschutz desktop styles */
   .datenschutzTitle {
-    text-align: center;
     font-size: 2em;
     padding: 20px;
   }
-
   .datenschutzHeadings {
     font-size: 1.8em;
-    text-align: center;
     padding: 15px;
   }
-
   .datenschutzParagraphs {
     font-size: 1em;
-    text-align: justify;
     margin: 15px;
   }
-
   .datenschutzList {
-    list-style-type: disc;
     padding-left: 30px;
-    margin: 15px;
   }
-
   .datenschutzListItems {
     margin: 8px 0;
     font-size: 1em;
   }
-
   .datenschutzOrderedList {
     list-style: decimal;
     padding-left: 30px;
-    margin: 15px;
   }
   /* Kontakt page desktop styling */
   .boxImageContent {
@@ -510,37 +464,20 @@
     max-height: 40%;
   }
   /* footer styling */
-  .zukunftImage {
-    margin: 15px;
-  }
-  .byKijufiImage {
-    margin: 5px;
-  }
-  .footerText {
-    padding-left: 5px;
+  .footerText,
+  .footerLink {
     text-align: center;
+    padding-left: 5px;
   }
-  .footerTopLeft {
+  .footerTopLeft,
+  .footerLinksList {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .footerLinksList {
     padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 10px;
-  }
-  .footerBottomSocials {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footerLink {
-    padding: 5px;
-  }
-  .socialIcon {
-    margin-bottom: 5px;
   }
   /* Filmeinreichung Page Mobile */
   .filmeinreichungTopContainer {
@@ -650,58 +587,32 @@
     text-align: center;
   }
   /* Datenschutzerklarung page */
-  .datenschutzTitle {
-    text-align: center;
-    padding: 10px;
-    font-size: 1.5em;
-  }
+  .datenschutzTitle,
   .datenschutzHeadings {
     font-size: 1.5em;
-    text-align: center;
     padding: 10px;
   }
   .datenschutzParagraphs {
     font-size: 0.8em;
-    text-align: justify;
     margin: 10px;
   }
-  .datenschutzList {
-    list-style-type: disc;
+  .datenschutzList,
+  .datenschutzOrderedList {
     padding-left: 20px;
-    margin: 10px;
   }
   .datenschutzListItems {
     margin: 5px 0;
     font-size: 0.8em;
   }
-  .datenschutzOrderedList {
-    list-style: decimal;
-    padding-left: 20px;
-    margin: 10px;
-  }
   /* Impressum page */
   .impressumContainer {
-    text-align: center;
     padding-bottom: 20px;
     padding-right: 5px;
   }
-  .impressumParagraph {
-    margin: 10px 0;
-  }
-  .impressumList {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
-  }
+  .impressumParagraph,
   .impressumListItem {
-    margin: 5px 0;
-  }
-  .impressumLink {
-    color: #007bff;
-    text-decoration: none;
-  }
-  .impressumLink:hover {
-    text-decoration: underline;
+    margin: 10px 0;
+    font-size: 0.8em;
   }
   /* Kontakt styling small */
   .box {
@@ -861,29 +772,23 @@
     margin: 20px;
   }
 }
-
-/* Additional Styles */
+/* Common styles */
 .kijufiImage {
   margin-top: 25px;
   margin-left: 40px;
 }
-
 .socialIcon {
   margin: 7px;
 }
-
 .footerTop {
   background-color: #e16848;
 }
-
 .footerLinksList {
   list-style-type: none;
 }
-
 .footerText {
   padding: 15px;
 }
-
 .byKijufiImage {
   padding-top: 10px;
 }
@@ -903,7 +808,6 @@
   width: 50%;
   height: 50%;
 }
-
 .tile3 {
   background-color: #fafcfb;
   bottom: 0;
@@ -911,7 +815,6 @@
   width: 50%;
   height: 50%;
 }
-
 .tile2 {
   background-color: #d5e7e3;
   top: 0;
@@ -919,7 +822,6 @@
   width: 50%;
   height: 50%;
 }
-
 .tile4 {
   background-color: #d5e7e3;
   bottom: 0;
@@ -927,7 +829,59 @@
   width: 50%;
   height: 50%;
 }
-
+/* Impressum Common styles */
+.impressumContainer {
+  text-align: center;
+}
+.impressumList {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.impressumLink {
+  color: #007bff;
+  text-decoration: none;
+}
+.impressumLink:hover {
+  text-decoration: underline;
+}
+/* Datenschutz common styles */
+.datenschutzTitle,
+.datenschutzHeadings {
+  text-align: center;
+}
+.datenschutzParagraphs {
+  text-align: justify;
+}
+.datenschutzList,
+.datenschutzOrderedList {
+  list-style-type: disc;
+  margin: 15px;
+}
+.datenschutzListItems {
+  font-size: 1em;
+}
+/* Footer common styles */
+.footerTop,
+.footerBottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.zukunftImage,
+.byKijufiImage {
+  margin: 15px;
+}
+.footerBottomSocials,
+.socialIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.socialIcon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /* Countdown styling */
 .countdownNumbers {
   color: #e16848;
@@ -957,14 +911,12 @@
 .schritteColorEight {
   color: #fae8df;
 }
-
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
 }
-
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
