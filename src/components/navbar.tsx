@@ -54,7 +54,6 @@ const Navbar: React.FC = () => {
           <ul className={`${styles.headerMenu}  ${isOpen ? "active" : ""}`}>
             {links.map(([path, text]) => {
               const isActive = pathname === path;
-              console.log({ pathname, path });
               return (
                 <li key={path}>
                   <Link

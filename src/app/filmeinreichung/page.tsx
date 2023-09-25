@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import filmEinreichungCamera from "@/images/filmCamera.png.png";
+import FilmClapper from "@/images/FilmClapper.png";
 import styles from "../page.module.css";
 
 export default function Filmeinreichung() {
@@ -64,28 +65,6 @@ export default function Filmeinreichung() {
       colorClass: "schritteColorEight",
     },
   ];
-  const stepColors = [
-    "#5BA092",
-    "#F6CC5E",
-    "#E16848",
-    "#5BA092",
-    "#F6CC5E",
-    "#FFCAAF",
-    "#D5E7E3",
-    "#FAE8DF",
-  ];
-  function shuffleArray<T>(array: T[]): T[] {
-    const shuffledArray = [...array];
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
-    }
-    return shuffledArray;
-  }
-  const shuffledStepColors = shuffleArray(stepColors);
   /* More Information Button */
   const [showDetails, setShowDetails] = useState(false);
   const toggleDetails = () => {
@@ -110,10 +89,10 @@ export default function Filmeinreichung() {
       </div>
       <div className={styles.richtLinienContainer}>
         <h2>Richtlinien für die Einreichung:</h2>
-        <div className={`${styles.schritte} ${styles.schritteContainer}`}>
+        <div className={styles.schritteContainer}>
           {schritte.map((step, index) => (
             <div
-              className={`${styles.schritte} ${shuffledStepColors[index]}`}
+              className={`${styles.schritte} ${styles.colorClass}`}
               key={index}
             >
               <div className={styles.schritteNummer}>{step.nummer}</div>
@@ -125,69 +104,130 @@ export default function Filmeinreichung() {
           ))}
         </div>
       </div>
-      <div>
+      <div className={styles.mehrInfoButtonContainer}>
         <hr></hr>
-        <button onClick={toggleDetails}>
+        <button
+          type="button"
+          onClick={toggleDetails}
+          className={styles.mehrInfoButton}
+        >
           {showDetails
             ? "Weniger Einzelheiten zu den Bedingungen für die Einreichung"
-            : "Mehr Details über die Bedingungen für die Einreichung"}
+            : "Weitere Details über die Bedingungen für die Einreichung"}
         </button>
         {showDetails && (
-          <div>
-            <p>Submission Guidelines:</p>
-            <p>
-              Mehrere Einreichungen: Als junger Regisseur oder Teil eines Teams
-              können Sie bis zu drei Ihrer fertigen Filmarbeiten einreichen. So
-              können Sie Ihre Vielseitigkeit unter Beweis stellen und Ihr Talent
-              in verschiedenen Genres und Formaten zeigen.
-            </p>
-            <p>
-              Filmlänge: Ihre Filme dürfen nicht länger als 10 Minuten sein. Wir
-              glauben an die Kraft von kurzen Geschichten und möchten jedem eine
-              faire Chance geben, vorgestellt zu werden.
-            </p>
-            <p>
-              Datum der Fertigstellung der Produktion: Für das kommende Festival
-              nehmen wir Filme an, die nach dem 1. Januar 2022 fertiggestellt
-              wurden. Damit stellen wir sicher, dass wir frische und zeitgemäße
-              Inhalte von unseren jungen Filmemachern präsentieren können.
-            </p>
-            <p>
-              Altersvoraussetzung: Um für die Einreichung in Frage zu kommen,
-              dürfen die Regisseure zum Zeitpunkt der Fertigstellung des Films
-              nicht älter als 25 Jahre sein. Wir ermutigen unsere jungen
-              Filmemacher, sich zu beteiligen und der Welt des Films ihren
-              Stempel aufzudrücken.
-            </p>
-            <p>
-              Dateiformate: Sie können Ihre Filme in jedem gängigen Dateiformat
-              einreichen. Unser Einreichungsportal ermöglicht ein einfaches
-              Hochladen von Dateien und gewährleistet so einen problemlosen
-              Ablauf für alle Teilnehmer.
-            </p>
-            <p>
-              Kostenlose Anmeldung: Wir glauben an die Förderung einer kreativen
-              Gemeinschaft ohne Barrieren, deshalb ist die Einreichung von
-              Filmen völlig kostenlos. Füllen Sie einfach die Registrierung auf
-              unserem benutzerfreundlichen filmfestivals4u-Anmeldeportal aus.
-            </p>
-            <p>
-              Rechte-Zusicherung: Mit der Einreichung Ihres Films versichern Sie
-              uns, dass Sie alle Bild- und Tonrechte an Ihrem Werk
-              uneingeschränkt besitzen. Damit ist sichergestellt, dass Ihre
-              kreative Stimme während des gesamten Prozesses geschützt ist.
-            </p>
-            <p>
-              Festival-Vorführung: Wenn Ihr Film für unser Festivalprogramm
-              ausgewählt wird, müssen mindestens zwei Filmemacher aus Ihrem Team
-              bei der Vorführung anwesend sein. Aber keine Sorge, wir haben für
-              Sie vorgesorgt! Die Reisekosten, einschließlich der Unterkunft,
-              werden für die teilnehmenden Filmemacher übernommen. Für
-              Teilnehmer unter 16 Jahren können wir dieses Angebot auch auf eine
-              Begleitperson ausweiten.
-            </p>
+          <div className={styles.guidelinesListContainer}>
+            <ol className={styles.guidelinesList}>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Mehrere Einreichungen:
+                </span>{" "}
+                Als junger Regisseur oder Teil eines Teams können Sie bis zu
+                drei Ihrer fertigen Filmarbeiten einreichen. So können Sie Ihre
+                Vielseitigkeit unter Beweis stellen und Ihr Talent in
+                verschiedenen Genres und Formaten zeigen.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Filmlänge:
+                </span>{" "}
+                Ihre Filme dürfen nicht länger als 10 Minuten sein. Wir glauben
+                an die Kraft von kurzen Geschichten und möchten jedem eine faire
+                Chance geben, vorgestellt zu werden.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  {" "}
+                  Datum der Fertigstellung der Produktion:
+                </span>{" "}
+                Für das kommende Festival nehmen wir Filme an, die nach dem 1.
+                Januar 2022 fertiggestellt wurden. Damit stellen wir sicher,
+                dass wir frische und zeitgemäße Inhalte von unseren jungen
+                Filmemachern präsentieren können.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Altersvoraussetzung:
+                </span>{" "}
+                Um für die Einreichung in Frage zu kommen, dürfen die Regisseure
+                zum Zeitpunkt der Fertigstellung des Films nicht älter als 25
+                Jahre sein. Wir ermutigen unsere jungen Filmemacher, sich zu
+                beteiligen und der Welt des Films ihren Stempel aufzudrücken.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Dateiformate:
+                </span>{" "}
+                Sie können Ihre Filme in jedem gängigen Dateiformat einreichen.
+                Unser Einreichungsportal ermöglicht ein einfaches Hochladen von
+                Dateien und gewährleistet so einen problemlosen Ablauf für alle
+                Teilnehmer.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Kostenlose Anmeldung:{" "}
+                </span>{" "}
+                Wir glauben an die Förderung einer kreativen Gemeinschaft ohne
+                Barrieren, deshalb ist die Einreichung von Filmen völlig
+                kostenlos. Füllen Sie einfach die Registrierung auf unserem
+                benutzerfreundlichen filmfestivals4u-Anmeldeportal aus.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  {" "}
+                  Rechte-Zusicherung:
+                </span>{" "}
+                Mit der Einreichung Ihres Films versichern Sie uns, dass Sie
+                alle Bild- und Tonrechte an Ihrem Werk uneingeschränkt besitzen.
+                Damit ist sichergestellt, dass Ihre kreative Stimme während des
+                gesamten Prozesses geschützt ist.
+              </li>
+              <li className={styles.guidelinesListItems}>
+                <span className={styles.guidelinesListHeadlines}>
+                  Festival-Vorführung:
+                </span>{" "}
+                Wenn Ihr Film für unser Festivalprogramm ausgewählt wird, müssen
+                mindestens zwei Filmemacher aus Ihrem Team bei der Vorführung
+                anwesend sein. Aber keine Sorge, wir haben für Sie vorgesorgt!
+                Die Reisekosten, einschließlich der Unterkunft, werden für die
+                teilnehmenden Filmemacher übernommen. Für Teilnehmer unter 16
+                Jahren können wir dieses Angebot auch auf eine Begleitperson
+                ausweiten.
+              </li>
+            </ol>
           </div>
         )}
+      </div>
+      <div className={styles.filmClapperContainer}>
+        <Image src={FilmClapper} alt="film clapper" />
+        <p className={styles.filmClapperText}>
+          <span className={styles.filmClapperHeading}>
+            Merken Sie sich Ihren Kalender vor:
+          </span>{" "}
+          Die Bewerbungsfrist für die Einreichung Ihres Films ist der 15.
+          Oktober 2023. Reichen Sie Ihre Filme unbedingt vor diesem Datum ein,
+          um für unser spannendes Programm mit talentierten jungen Filmemachern
+          berücksichtigt zu werden! Denkt daran: Die Zukunft des Filmemachens
+          liegt in euren Händen! Reicht eure Filme jetzt ein und lasst eurer
+          Kreativität freien Lauf!
+        </p>
+      </div>
+      <div className={styles.filmeEinreichenButtonContainer}>
+        <button type="button" className={styles.filmEinreichenButton}>
+          <Link
+            href="https://www.filmfestivals4u.net/einreichung.php?id=44"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className={styles.filmEinreichenButtonText}>
+              Ihren Film einreichen
+            </p>
+          </Link>
+        </button>
+        <p className={styles.filmEinreichenText}>
+          Wenn Sie auf diese Schaltfläche klicken, werden Sie auf die externe
+          Seite filmfestivals4u weitergeleitet.
+        </p>
       </div>
     </>
   );

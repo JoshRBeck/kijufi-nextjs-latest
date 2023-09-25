@@ -104,77 +104,89 @@ export default function Kontakt() {
         <Map />
       </div>
       {/* Container for Socials */}
-      <div className={styles.socialsContainer}>
-        <h1 className={styles.kontaktSocialsKijufi}>Kijufi</h1>
-        Landesverband Kinder- und Jugendfilm Berlin e.V. (kijufi)
-        <br />
-        Am Sudhaus 21
-        <br />
-        2053 Berlin
-        <br />
-        Telefon: +49 (0)157 35 70 58 73
-        <br />
-        E-Mail: info@kijufi.de
-        <div className={styles.footerBottomSocials}>
-          <Image
-            src={Instagram}
-            alt="Instagram logo"
-            className={styles.socialIcon}
-          />
-          <Image src={Facebook} alt="Facebook" className={styles.socialIcon} />
-          <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
-          <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+      <div className={styles.containerSocialsAndForm}>
+        <div className={styles.socialsContainer}>
+          <h1 className={styles.kontaktSocialsKijufi}>Kijufi</h1>
+          Landesverband Kinder- und Jugendfilm Berlin e.V. (kijufi)
+          <br />
+          Am Sudhaus 21
+          <br />
+          2053 Berlin
+          <br />
+          Telefon: +49 (0)157 35 70 58 73
+          <br />
+          E-Mail: info@kijufi.de
+          <div className={styles.footerBottomSocials}>
+            <Image
+              src={Instagram}
+              alt="Instagram logo"
+              className={styles.socialIcon}
+            />
+            <Image
+              src={Facebook}
+              alt="Facebook"
+              className={styles.socialIcon}
+            />
+            <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
+            <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+          </div>
         </div>
-      </div>
-      {/* Container for Kontakt form */}
-      <div>
-        <form onSubmit={handleSubmit} className={styles.formContainer}>
-          <h2 className={styles.formTitle}>Wir freuen uns von dir zu hören!</h2>
-          <div className={styles.formField}>
-            <label htmlFor="name">Dein Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className={styles.inputField}
-            />
-          </div>
-          <div className={styles.formField}>
-            <label htmlFor="email">Deine Email Addresse</label>
-            <input
-              type="text"
-              id="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className={styles.inputField}
-            />
-          </div>
-          <div className={styles.formField}>
-            <label htmlFor="betreff">Betreff:</label>
-            <textarea
-              id="betreff"
-              name="betreff"
-              value={formData.betreff}
-              onChange={handleInputChange}
-              className={styles.textAreaField}
-            />
-          </div>
-          <div className={styles.formField}>
-            <label htmlFor="nachricht">Nachricht:</label>
-            <textarea
-              id="nachricht"
-              name="nachricht"
-              value={formData.nachricht}
-              onChange={handleInputChange}
-              className={styles.textAreaField}
-            />
-          </div>
-          <button type="submit" className={styles.submitButton}>
-            Senden
-          </button>
-        </form>
+        {/* Container for Kontakt form */}
+        <div>
+          <form onSubmit={handleSubmit} className={styles.formContainer}>
+            <h2 className={styles.formTitle}>
+              Wir freuen uns von dir zu hören!
+            </h2>
+            <div className={styles.formField}>
+              <label htmlFor="name"></label>
+              <input
+                placeholder="Dein Name"
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor="email"></label>
+              <input
+                placeholder="Deine Email Addresse"
+                type="text"
+                id="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                className={styles.inputField}
+              />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor="betreff"></label>
+              <textarea
+                placeholder="Betreff"
+                id="betreff"
+                name="betreff"
+                value={formData.betreff}
+                onChange={handleInputChange}
+                className={styles.textAreaField}
+              />
+            </div>
+            <div className={styles.formField}>
+              <label htmlFor="nachricht"></label>
+              <textarea
+                placeholder="Nachricht"
+                id="nachricht"
+                name="nachricht"
+                value={formData.nachricht}
+                onChange={handleInputChange}
+                className={styles.textAreaField}
+              />
+            </div>
+            <button type="submit" className={styles.submitButton}>
+              Senden
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

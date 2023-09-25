@@ -384,6 +384,27 @@
   .box {
     display: flex;
   }
+  .containerSocialsAndForm {
+    display: flex;
+    justify-content: space-between;
+  }
+  .formContainer {
+    max-width: 600px;
+    padding: 40px;
+    background-color: #fff;
+  }
+  .formField {
+    margin-bottom: 30px;
+  }
+  .inputField,
+  .textAreaField {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .submitButton {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
 }
 
 /* Mobile Styles */
@@ -454,7 +475,7 @@
   /* Tiled container */
   .tiledContainer {
     width: 100vh;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-y: auto;
   }
   .headingNeu {
@@ -532,15 +553,18 @@
   .filmeinreichungTopContainer h1 {
     padding-bottom: 10px;
     font-family: "Halcyon Black", sans-serif;
+    text-align: center;
   }
   .filmeinreichungTopContainer h4 {
     padding-bottom: 10px;
     font-family: "Halcyon Black", sans-serif;
     font-weight: 400;
+    text-align: center;
   }
   .filmeinreichungTopContainer p {
     padding-bottom: 10px;
     font-family: "Halcyon Black", sans-serif;
+    text-align: center;
   }
   .filmEinreichungCamera img {
     height: 35%;
@@ -554,7 +578,7 @@
     margin-top: 10px;
   }
   .schritteContainer {
-    background-color: #5ba092;
+    /* background-color: #5ba092; */
     padding: 10%;
     border-radius: 20px;
     margin-top: 15px;
@@ -572,6 +596,61 @@
   .schritteBeschreibung {
     text-align: center;
     padding-top: 5px;
+  }
+  .mehrInfoButtonContainer {
+    padding: 5%;
+  }
+  .mehrInfoButton,
+  .filmEinreichenButtonText {
+    background-color: #e16848;
+    font-family: "Halcyon Black", sans-serif;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .guidelinesListContainer {
+    background-color: #d5e7e3;
+    padding: 5%;
+  }
+  .guidelinesList {
+    margin: 0;
+    padding-left: 1em;
+  }
+  .guidelinesListItems {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  .guidelinesListHeadlines {
+    font-weight: 700;
+  }
+  .filmClapperHeading {
+    font-weight: 700;
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .filmClapperText {
+    font-family: "Halcyon Black", sans-serif;
+    padding: 10%;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .filmeEinreichenButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .filmEinreichenButton {
+    background-color: #e16848;
+    border-radius: 25px;
+    width: 80%;
+    height: 60px;
+  }
+  .filmEinreichenText {
+    padding: 10%;
+    font-family: "Halcyon Black", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
   }
   /* Datenschutzerklarung page */
   .datenschutzTitle {
@@ -696,7 +775,6 @@
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: #e16848;
   }
@@ -728,23 +806,62 @@
   .submitButton:hover {
     background-color: #0056b3;
   }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  /* Programm Styling */
+  .programmHeading {
+    font-family: "Halcyon Black", sans-serif;
+    text-align: center;
+    padding: 10px;
   }
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+  .programmHeadingContainer {
+    padding: 10%;
   }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .programmHeadingText {
+    display: flex;
+    text-align: center;
+  }
+  .programmSchedule {
+    padding: 10%;
+  }
+  .programmButton {
+    background-color: #eceef5;
+    font-family: "Halcyon Black", sans-serif;
+    border-radius: 35px;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    box-shadow: 4px 4px 8px rgba(63, 59, 61, 0.8);
+  }
+  .programmPoster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .programmDayHeading {
+    padding: 5px;
+  }
+  .essenKarte {
+    background-color: #d5e7e3;
+    margin: 10%;
+  }
+  .essenKarteHeading {
+    font-size: 1.5em;
+    font-family: "Halcyon Black", sans-serif;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px #fff;
+  }
+  .flyerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flyerHeader {
+    color: #323a64;
+    margin: 10%;
+    font-size: 1.2em;
+  }
+  .flyerImage {
+    width: 80%;
+    height: auto;
+    margin: 20px;
   }
 }
 
@@ -842,4 +959,21 @@
 }
 .schritteColorEight {
   color: #fae8df;
+}
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
 }
