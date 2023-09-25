@@ -96,22 +96,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-{
-  /* <li className={styles.footerLink}> */
-}
-
-{
-  /* <Link href="/contact" className={styles.footerLink}>
-                Kontakt
-              </Link>
-            </li>
-            <li className={styles.footerLink}>
-              <Link href="/impressum" className={styles.footerLink}>
-                Impressum
-              </Link>
-            </li>
-            <li className={styles.footerLink}>
-              <Link href="/dataprotection" className={styles.footerLink}>
-                Datenschutz
-              </Link> */
-}

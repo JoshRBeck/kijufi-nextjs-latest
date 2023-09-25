@@ -9,6 +9,7 @@ import Instagram from "@/images/Instagram.png";
 import Facebook from "@/images/Facebook.png";
 import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
+import downArrow from "@/images/downArrow.png";
 declare const google: any;
 
 export default function Kontakt() {
@@ -186,6 +187,38 @@ export default function Kontakt() {
               Senden
             </button>
           </form>
+        </div>
+      </div>
+      <div className={styles.postedDownloadContainer}>
+        <h1>Holen Sie sich das Festivalposter hier</h1>
+        <div className={styles.boxContent}>Temporary Box</div>
+        <p>Click here to get the poster as PDF</p>
+        <Image
+          src={downArrow}
+          alt="an arrow pointing down"
+          className={styles.downArrow}
+        ></Image>
+        <div>
+          <button type="button" className={styles.downloadButton}>
+            Download
+          </button>
+        </div>
+        <p>In sozialen Netzwerken Teilen</p>
+        <div className={styles.socialIconContainer}>
+          <Image
+            src={Instagram}
+            alt="Instagram logo"
+            className={styles.socialIcon}
+          />
+        </div>
+        <div className={styles.socialIconContainer}>
+          <Image src={Facebook} alt="Facebook" className={styles.socialIcon} />
+        </div>
+        <div className={styles.socialIconContainer}>
+          <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
+        </div>
+        <div className={styles.socialIconContainer}>
+          <Image src={M} alt="M Social Media" className={styles.socialIcon} />
         </div>
       </div>
     </div>

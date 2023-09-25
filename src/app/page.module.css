@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Black";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-blackitalic.otf")
@@ -13,7 +12,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Bold Fonts */
 @font-face {
   font-family: "Halcyon Bold";
@@ -21,7 +19,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Bold";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-bolditalic.otf")
@@ -29,7 +26,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Hairline Fonts */
 @font-face {
   font-family: "Halcyon Hairline";
@@ -38,7 +34,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Hairline";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-hairlineitalic.otf")
@@ -46,7 +41,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Light Fonts */
 @font-face {
   font-family: "Halcyon Light";
@@ -54,7 +48,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Light";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-lightitalic.otf")
@@ -62,7 +55,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Medium Fonts */
 @font-face {
   font-family: "Halcyon Medium";
@@ -71,7 +63,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Medium";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-mediumitalic.otf")
@@ -79,7 +70,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Regular Fonts */
 @font-face {
   font-family: "Halcyon Regular";
@@ -88,7 +78,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Regular";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-regularitalic.otf")
@@ -96,7 +85,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Semibold Fonts */
 @font-face {
   font-family: "Halcyon Semibold";
@@ -105,7 +93,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Semibold";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-semibolditalic.otf")
@@ -113,7 +100,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 /* Halcyon Thin Fonts */
 @font-face {
   font-family: "Halcyon Thin";
@@ -121,7 +107,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Halcyon Thin";
   src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-thinitalic.otf")
@@ -391,7 +376,7 @@
   .formContainer {
     max-width: 600px;
     padding: 40px;
-    background-color: #fff;
+    background-color: #e16848;
   }
   .formField {
     margin-bottom: 30px;
@@ -404,6 +389,17 @@
   .submitButton {
     padding: 15px 30px;
     font-size: 18px;
+  }
+  .socialsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    background-color: #d5e7e3;
+  }
+  .kontaktSocialsKijufi {
+    font-size: 5em;
   }
 }
 
@@ -600,6 +596,7 @@
   .mehrInfoButtonContainer {
     padding: 5%;
   }
+  .downloadButton,
   .mehrInfoButton,
   .filmEinreichenButtonText {
     background-color: #e16848;
@@ -960,6 +957,7 @@
 .schritteColorEight {
   color: #fae8df;
 }
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
