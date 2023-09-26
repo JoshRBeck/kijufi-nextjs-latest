@@ -6,7 +6,7 @@ import styles from "../app/page.module.css";
 const Schedule: React.FC = () => {
   const schedule = [
     {
-      day: "Freitag",
+      day: "FR. 8.12",
       poster: {
         imageSrc: Chair,
         buttonText: "Programmdetails",
@@ -33,7 +33,7 @@ const Schedule: React.FC = () => {
       ],
     },
     {
-      day: "Samstag",
+      day: "SA. 9.12",
       poster: {
         imageSrc: Chair,
         buttonText: "Programmdetails",
@@ -71,7 +71,7 @@ const Schedule: React.FC = () => {
       ],
     },
     {
-      day: "Sonntag",
+      day: "SO. 10.12",
       poster: {
         imageSrc: Chair,
         buttonText: "Programmdetails",
@@ -90,12 +90,7 @@ const Schedule: React.FC = () => {
   return (
     <div className={styles.programmScheduleDesktop}>
       {schedule.map((dayInfo, dayIndex) => (
-        <div
-          key={dayIndex}
-          className={`${styles.programmDayDesktop} ${
-            dayIndex % 2 === 0 ? styles.evenDay : styles.oddDay
-          }`}
-        >
+        <div key={dayIndex} className={styles.programmDayDesktop}>
           <div className={styles.programmPoster}>
             <Image
               src={dayInfo.poster.imageSrc}
@@ -109,22 +104,25 @@ const Schedule: React.FC = () => {
           <div className={styles.programmDaySchedule}>
             <h2 className={styles.programmDayHeading}>{dayInfo.day}</h2>
             <ul>
-              {dayInfo.events.map((event, eventIndex) => (
-                <li key={eventIndex} className={styles.programmEvent}>
-                  <div>
-                    <p>Start Time:</p> {event.Startzeit}
-                  </div>
-                  <div>
-                    <p>Film Screenings:</p> {event.Filmvorführungen}
-                  </div>
-                  <div>
-                    <p>Festival:</p> {event.Festival}
-                  </div>
-                  <div>
-                    <p>Standort:</p> {event.Standort}
-                  </div>
-                </li>
-              ))}
+              {dayInfo.events
+                .filter((event) => {
+                  return (
+                    event.Startzeit !== "" ||
+                    event.Filmvorführungen !== "" ||
+                    event.Festival !== "" ||
+                    event.Standort !== ""
+                  );
+                })
+                .map((event, eventIndex) => (
+                  <li key={eventIndex} className={styles.programmEvent}>
+                    {event.Startzeit && <div>{event.Startzeit}</div>}
+                    {event.Filmvorführungen && (
+                      <div>{event.Filmvorführungen}</div>
+                    )}
+                    {event.Festival && <div>{event.Festival}</div>}
+                    {event.Standort && <div>{event.Standort}</div>}
+                  </li>
+                ))}
             </ul>
           </div>
         </div>

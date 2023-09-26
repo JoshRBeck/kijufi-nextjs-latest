@@ -65,7 +65,6 @@ export default function Filmeinreichung() {
       colorClass: "schritteColorEight",
     },
   ];
-  /* More Information Button */
   const [showDetails, setShowDetails] = useState(false);
   const toggleDetails = () => {
     setShowDetails(!showDetails);

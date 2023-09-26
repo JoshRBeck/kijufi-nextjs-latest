@@ -376,11 +376,14 @@
   }
   .programmDayDesktop {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     width: 90%; /* Adjust the width as needed */
     margin: 0 1%;
     padding: 10px;
+  }
+  .programmDayDesktop:nth-child(even) {
+    flex-direction: row;
   }
   .programmEvent {
     list-style: none;
@@ -396,17 +399,26 @@
     padding-left: 10px;
   }
   .essenKarte {
+    position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: 400px;
-    background-color: #5ba092;
+    background-color: #d5e7e3;
+    border-radius: 45px;
+    margin: 5%;
+  }
+  .essenKarteHeading {
+    position: absolute;
+    top: 10%;
+    left: 5%;
   }
   .flyerContainer {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    margin: 10%;
   }
   .flyerHeader {
     font-size: 2.5em;
@@ -950,6 +962,12 @@
   font-family: "Halcyon Black", sans-serif;
   color: #323a64;
 }
+.programmDayHeading {
+  font-family: "Halcyon Black", sans-serif;
+  color: #323a64;
+  font-size: 3em;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #000;
+}
 .programmHeadingText {
   margin: 20px;
   background-color: #f1f7f6;
@@ -960,12 +978,19 @@
 .programmEvent {
   font-family: "Halcyon Medium", sans-serif;
   padding: 5px;
+  font-size: 1.2em;
 }
 .flyerImage {
   padding: 15px;
+  margin: 5%;
 }
 .flyerHeader {
   color: #323a64;
+}
+.essenKarteHeading {
+  font-family: "Halcyon Black", sans-serif;
+  font-size: 2em;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #000;
 }
 /* Countdown styling */
 .countdownNumbers {
