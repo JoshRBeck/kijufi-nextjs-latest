@@ -267,6 +267,12 @@
     text-decoration: none;
     color: #333c3a;
   }
+  .footerBottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   /* Impressum desktop styles */
   .impressumContainer {
     padding: 20px;
@@ -478,6 +484,10 @@
   .footerLinksList {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .footerBottom,
+  .footerTop {
+    flex-direction: column;
   }
   /* Filmeinreichung Page Mobile */
   .filmeinreichungTopContainer {
@@ -866,7 +876,6 @@
 .footerBottom {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
 .zukunftImage,
 .byKijufiImage {

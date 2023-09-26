@@ -1,5 +1,4 @@
-"use client";
-import { useEffect, useState } from "react";
+import KontaktForm from "@/components/kontakt";
 import styles from "../page.module.css";
 import Image from "next/image";
 import filmTheater from "@/images/filmtheateramfriedrichshain.jpg";
@@ -10,54 +9,9 @@ import Facebook from "@/images/Facebook.png";
 import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
 import downArrow from "@/images/downArrow.png";
-declare const google: any;
+import Map from "@/components/map";
 
 export default function Kontakt() {
-  const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-  const Map = () => {
-    useEffect(() => {
-      const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&libraries=places`;
-      script.async = true;
-      document.head.appendChild(script);
-      script.onload = () => {
-        const map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 52.52933254861146, lng: 13.430516771164287 },
-          zoom: 8,
-        });
-        // Add markers, polygons, or other map features
-      };
-      return () => {
-        document.head.removeChild(script);
-      };
-    }, []);
-
-    return <div id="map" className={styles.map} />;
-  };
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    betreff: "",
-    nachricht: "",
-  });
-  const handleInputChange = (e: { target: { name: any; value: any } }) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    });
-    if (response.ok) {
-      console.log("Email Sent Successfully!");
-    } else {
-      console.log("Email sending failed");
-    }
-  };
-
   return (
     <div>
       <div className={styles.kontaktContainer}>
@@ -101,7 +55,6 @@ export default function Kontakt() {
         </p>
       </div>
       <div className={styles.mapContainer}>
-        {/* Map box */}
         <Map />
       </div>
       {/* Container for Socials */}
@@ -132,63 +85,8 @@ export default function Kontakt() {
             <Image src={M} alt="M Social Media" className={styles.socialIcon} />
           </div>
         </div>
-        {/* Container for Kontakt form */}
-        <div>
-          <form onSubmit={handleSubmit} className={styles.formContainer}>
-            <h2 className={styles.formTitle}>
-              Wir freuen uns von dir zu hören!
-            </h2>
-            <div className={styles.formField}>
-              <label htmlFor="name"></label>
-              <input
-                placeholder="Dein Name"
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                className={styles.inputField}
-              />
-            </div>
-            <div className={styles.formField}>
-              <label htmlFor="email"></label>
-              <input
-                placeholder="Deine Email Addresse"
-                type="text"
-                id="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                className={styles.inputField}
-              />
-            </div>
-            <div className={styles.formField}>
-              <label htmlFor="betreff"></label>
-              <textarea
-                placeholder="Betreff"
-                id="betreff"
-                name="betreff"
-                value={formData.betreff}
-                onChange={handleInputChange}
-                className={styles.textAreaField}
-              />
-            </div>
-            <div className={styles.formField}>
-              <label htmlFor="nachricht"></label>
-              <textarea
-                placeholder="Nachricht"
-                id="nachricht"
-                name="nachricht"
-                value={formData.nachricht}
-                onChange={handleInputChange}
-                className={styles.textAreaField}
-              />
-            </div>
-            <button type="submit" className={styles.submitButton}>
-              Senden
-            </button>
-          </form>
-        </div>
       </div>
+      <KontaktForm />
       <div className={styles.postedDownloadContainer}>
         <h1>Holen Sie sich das Festivalposter hier</h1>
         <div className={styles.boxContent}>Temporary Box</div>
