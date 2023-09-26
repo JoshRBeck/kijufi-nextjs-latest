@@ -2,7 +2,7 @@
 import styles from "../app/page.module.css";
 import { useState } from "react";
 
-function KontaktForm() {
+const KontaktForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",

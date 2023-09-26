@@ -361,6 +361,57 @@
   .kontaktSocialsKijufi {
     font-size: 5em;
   }
+  /* Programm Desktop styling */
+  .programmHeadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .programmScheduleDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .programmDayDesktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 1%;
+    padding: 10px;
+  }
+  .programmEvent {
+    list-style: none;
+  }
+  .evenDay {
+    flex-direction: row-reverse; /* Reverse the order of elements on even days */
+  }
+  .oddDay {
+    flex-direction: row;
+  }
+  .programmDaySchedule {
+    flex: 1;
+    padding-left: 10px;
+  }
+  .essenKarte {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: #5ba092;
+  }
+  .flyerContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .flyerHeader {
+    font-size: 2.5em;
+    padding: 5%;
+  }
 }
 
 /* Mobile Styles */
@@ -740,19 +791,6 @@
   .programmSchedule {
     padding: 10%;
   }
-  .programmButton {
-    background-color: #eceef5;
-    font-family: "Halcyon Black", sans-serif;
-    border-radius: 35px;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    box-shadow: 4px 4px 8px rgba(63, 59, 61, 0.8);
-  }
-  .programmPoster {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .programmDayHeading {
     padding: 5px;
   }
@@ -771,15 +809,15 @@
     flex-direction: column;
     align-items: center;
   }
-  .flyerHeader {
-    color: #323a64;
-    margin: 10%;
-    font-size: 1.2em;
-  }
+
   .flyerImage {
     width: 80%;
     height: auto;
     margin: 20px;
+  }
+  .flyerHeader {
+    margin: 10%;
+    font-size: 1.2em;
   }
 }
 /* Common styles */
@@ -890,6 +928,44 @@
 .socialIcon {
   margin-left: 5px;
   margin-right: 5px;
+}
+/* Programm common styles */
+.programmDaySchedule {
+  text-align: justify;
+}
+.programmPoster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.programmButton {
+  background-color: #eceef5;
+  font-family: "Halcyon Black", sans-serif;
+  border-radius: 35px;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  box-shadow: 4px 4px 0px rgb(84, 97, 144);
+}
+.programmHeading {
+  font-family: "Halcyon Black", sans-serif;
+  color: #323a64;
+}
+.programmHeadingText {
+  margin: 20px;
+  background-color: #f1f7f6;
+  box-shadow: 1px 4px 0px rgb(84, 97, 144);
+  border-radius: 25px;
+  padding: 10px;
+}
+.programmEvent {
+  font-family: "Halcyon Medium", sans-serif;
+  padding: 5px;
+}
+.flyerImage {
+  padding: 15px;
+}
+.flyerHeader {
+  color: #323a64;
 }
 /* Countdown styling */
 .countdownNumbers {

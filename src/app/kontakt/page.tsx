@@ -1,7 +1,8 @@
 import KontaktForm from "@/components/kontakt";
 import styles from "../page.module.css";
 import Image from "next/image";
-import filmTheater from "@/images/filmtheateramfriedrichshain.jpg";
+import filmTheater from "@/images/filmtheater.png";
+import jugendkulturzentrum from "@/images/jugendkulturzentrum.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Instagram from "@/images/Instagram.png";
@@ -40,7 +41,13 @@ export default function Kontakt() {
         {/* Box for Festival */}
         <div className={styles.box}>
           <h1 className={styles.boxTitle}>Für das Festival!</h1>
-          <div className={styles.boxContent}>Temporary Box</div>
+          <div className={styles.boxImage}>
+            <Image
+              src={jugendkulturzentrum}
+              alt="youth culture center"
+              className={styles.boxImageContent}
+            />
+          </div>
         </div>
       </div>
       <div className={styles.boxText}>
@@ -86,7 +93,7 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
-      <KontaktForm />
+      {/* <KontaktForm /> */}
       <div className={styles.postedDownloadContainer}>
         <h1>Holen Sie sich das Festivalposter hier</h1>
         <div className={styles.boxContent}>Temporary Box</div>

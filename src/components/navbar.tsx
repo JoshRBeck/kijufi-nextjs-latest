@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   const links = [
     ["/", "Homepage"],
     ["/programm", "Programm"],
-    ["/practical-info", "Pratical Info"],
+    ["/practical-info", "Practical Info"],
     ["/kontakt", "Kontakt"],
     ["/faq", "FAQ"],
     ["/impressum", "Impressum"],
@@ -45,31 +45,36 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <div className={`${styles.navbar} ${isOpen ? "open" : ""}`}>
-        {isMobile &&
-        <div className={styles.burgerButton}>
-          <button type="button" onClick={toggleMenu} id="al" aria-label="Name">
-            <div className={styles.burgerLine}></div>
-            <div className={styles.burgerLine}></div>
-            <div className={styles.burgerLine}></div>
-          </button>
-          <ul className={`${styles.headerMenu}  ${isOpen ? "active" : ""}`}>
-            {links.map(([path, text]) => {
-              const isActive = pathname === path;
-              return (
-                <li key={path}>
-                  <Link
-                    href={path}
-                    className={styles.headerMenuLi}
-                    data-active={isActive}
-                  >
-                    {text}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        }
+        {isMobile && (
+          <div className={styles.burgerButton}>
+            <button
+              type="button"
+              onClick={toggleMenu}
+              id="al"
+              aria-label="Name"
+            >
+              <div className={styles.burgerLine}></div>
+              <div className={styles.burgerLine}></div>
+              <div className={styles.burgerLine}></div>
+            </button>
+            <ul className={`${styles.headerMenu}  ${isOpen ? "active" : ""}`}>
+              {links.map(([path, text]) => {
+                const isActive = pathname === path;
+                return (
+                  <li key={path}>
+                    <Link
+                      href={path}
+                      className={styles.headerMenuLi}
+                      data-active={isActive}
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
