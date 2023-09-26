@@ -80,7 +80,7 @@ const Schedule: React.FC = () => {
         {
           Startzeit: "🕘 11.00",
           Filmvorführungen:
-            "🎬 Publikumsfavoriten + Kinderrechte-Überraschungsfilm 2",
+            "🎬Publikumsfavoriten + Kinderrechte-Überraschungsfilm 2",
           Festival: "",
           Standort: "📍Filmtheater am Friedrichshain, Saal 2",
         },
