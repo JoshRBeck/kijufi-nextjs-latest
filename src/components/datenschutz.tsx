@@ -1,6 +1,6 @@
 import styles from "../app/page.module.css";
 
-const Datenschutz: React.FC = () => {
+const DatenschutzComponent: React.FC = () => {
   const datenschutzData = [
     {
       title: "Datenschutzerklärung",
@@ -210,26 +210,26 @@ const Datenschutz: React.FC = () => {
     <div className={styles.datenschutz}>
       {datenschutzData.map((section, index) => (
         <div key={index}>
-          <h2 className={styles.sectionTitle}>{section.title}</h2>
+          <h2 className={styles.datenschutzTitle}>{section.title}</h2>
           <div className={styles.sectionContent}>
             {section.content.map((item, itemIndex) => (
               <div key={itemIndex}>
                 {item.type === "paragraph" && (
-                  <p className={styles.paragraph}>{item.text}</p>
+                  <p className={styles.datenschutzParagraphs}>{item.text}</p>
                 )}
                 {item.type === "unorderedList" && (
-                  <ul className={styles.unorderedList}>
+                  <ul className={styles.datenschutzList}>
                     {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className={styles.listItem}>
+                      <li key={listItemIndex} className={styles.datenschutzListItems}>
                         {listItem}
                       </li>
                     ))}
                   </ul>
                 )}
                 {item.type === "list" && (
-                  <ul className={styles.orderedList}>
+                  <ul className={styles.datenschutzOrderedList}>
                     {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className={styles.listItem}>
+                      <li key={listItemIndex} className={styles.datenschutzListItems}>
                         {listItem}
                       </li>
                     ))}
@@ -244,4 +244,5 @@ const Datenschutz: React.FC = () => {
   );
 };
 
-export default Datenschutz;
+
+export default DatenschutzComponent;
