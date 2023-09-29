@@ -28,12 +28,29 @@ export default function Home() {
         </div>
         <div className={styles.tiledContainer}>
           <div className={styles.topTiles}>
-            <div className={styles.tile1}></div>
+            <div className={styles.tile1}>
+              <Image
+                src={Chair}
+                alt="chair image"
+                className={styles.chair}
+                width={Chair.width}
+                height={Chair.height}
+              />
+            </div>
             <div className={styles.tile2}></div>
           </div>
           <div className={styles.bottomTiles}>
             <div className={styles.tile3}></div>
-            <div className={styles.tile4}></div>
+            <div className={styles.tile4}>
+              {" "}
+              <Image
+                src={Camera}
+                alt="Camera image"
+                className={styles.Camera}
+                width={Camera.width}
+                height={Camera.height}
+              />
+            </div>
           </div>
         </div>
         <Countdown />

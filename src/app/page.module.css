@@ -273,24 +273,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  /* Impressum desktop styles */
-  /* .impressumContainer {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  .impressumParagraph,
-  .impressumListItem {
-    margin: 15px 0;
-    font-size: 1em;
-    text-align: center;
-  }
-  .impressumList {
-    padding-left: 30px;
-    margin: 15px 0;
-    list-style-position: inside;
-  } */
-  
+
   /* Kontakt page desktop styling */
   .boxImageContent {
     height: 100px;
@@ -671,7 +654,9 @@
   .filmClapperText,
   .filmeEinreichenButtonContainer,
   .filmEinreichenButton,
-  .filmEinreichenText {
+  .filmEinreichenText,
+  .countdownNumber,
+  .countdownText {
     font-family: "Halcyon Black", sans-serif;
   }
   .filmeinreichungTopContainer,
@@ -755,18 +740,6 @@
     padding: 10%;
     font-size: 1em;
   }
-
- 
-  /* Impressum page */
-  /* .impressumContainer {
-    padding-bottom: 20px;
-    padding-right: 5px;
-  }
-  .impressumParagraph,
-  .impressumListItem {
-    margin: 10px 0;
-    font-size: 0.8em;
-  } */
   /* Kontakt styling small */
   .box {
     display: flex;
@@ -953,23 +926,6 @@
   padding: 10px;
 }
 
-/* Impressum Common styles */
-/* .impressumContainer {
-  text-align: center;
-}
-.impressumList {
-  list-style-type: disc;
-  margin-left: 20px;
-  padding-left: 20px;
-}
-.impressumLink {
-  color: #007bff;
-  text-decoration: none;
-}
-.impressumLink:hover {
-  text-decoration: underline;
-} */
-
 /* Footer common styles */
 .footerTop,
 .footerBottom {
@@ -1042,9 +998,25 @@
   text-shadow: 2px 2px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #000;
 }
 /* Countdown styling */
-.countdownNumbers {
-  color: #e16848;
+.countdownWrapper {
+  display: flex;
+  justify-content: center;
 }
+.countdownItem {
+  text-align: center;
+}
+.countdownNumber {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e16848;
+  padding: 5px;
+}
+.countdownText {
+  font-size: 0.8em;
+  color: #e16848;
+  padding: 5px;
+}
+
 /* Film Einreichung Containers */
 .schritteColorOne {
   color: #5ba092;
