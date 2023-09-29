@@ -1,5 +1,7 @@
-import KontaktForm from "@/components/kontakt";
+import React from "react";
 import styles from "../page.module.css";
+import KontaktForm from "@/components/kontakt";
+import Map from "@/components/map";
 import Image from "next/image";
 import filmTheater from "@/images/filmtheater.png";
 import jugendkulturzentrum from "@/images/jugendkulturzentrum.png";
@@ -10,7 +12,6 @@ import Facebook from "@/images/Facebook.png";
 import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
 import downArrow from "@/images/downArrow.png";
-import Map from "@/components/map";
 
 export default function Kontakt() {
   return (

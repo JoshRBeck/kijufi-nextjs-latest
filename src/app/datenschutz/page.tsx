@@ -1,5 +1,5 @@
-import DatenschutzComponent from "@/components/datenschutz";
 import React from 'react';
+import DatenschutzComponent from '../../components/datenschutz';
 
 
 export default function Datenschutz() {

@@ -1,4 +1,5 @@
-import Impressum from "@/components/impressum";
+import React from "react";
+import Impressum from "../../components/impressum";
 
 export default function Imprint() {
   return (

@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import Chair from "@/images/chair.png";
 import styles from "../app/page.module.css";

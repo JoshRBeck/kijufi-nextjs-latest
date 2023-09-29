@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -9,7 +10,7 @@ import Facebook from "@/images/Facebook.png";
 import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
 import styles from "../app/page.module.css";
-import { reveal } from "react-burger-menu";
+import { reveal as Menu } from "react-burger-menu";
 
 const Navbar: React.FC = () => {
   console.log("Navbar component rendered");

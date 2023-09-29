@@ -1,3 +1,4 @@
+import React from "react";
 import "./globals.css";
 import styles from "./page.module.css";
 import { Suspense } from "react";
