@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "../app/page.module.css"
+import styles from "../app/impressum.module.css";
 
 const Impressum: React.FC = () => {
-
   const impressumData = [
     "Landesverband Kinder- & Jugendfilm Berlin e. V.",
     "Am Sudhaus 2",
@@ -10,9 +9,7 @@ const Impressum: React.FC = () => {
     "Vereinsregister Amtsgericht Charlottenburg | Registernummer VR 9413 Nz",
     "VAT-ID/Umsatzsteuer-Identifikationsnummer: DE361265479",
   ];
-
   const boardMembers = ["Max Neu", "Ralf Schlotter", "Claudia Ziegenfuß"];
-
   const contactMethods = [
     "Postalisch unter der oben genannten Adresse",
     "Per Mail an info@kijufi.de",
@@ -57,7 +54,7 @@ const Impressum: React.FC = () => {
         Landesverband Kinder- und Jugendfilm Berlin e. V. All rights reserved.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Impressum
+export default Impressum;

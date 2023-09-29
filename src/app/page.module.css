@@ -274,7 +274,7 @@
     justify-content: space-between;
   }
   /* Impressum desktop styles */
-  .impressumContainer {
+  /* .impressumContainer {
     padding: 20px;
     margin: 0 auto;
     max-width: 800px;
@@ -289,31 +289,8 @@
     padding-left: 30px;
     margin: 15px 0;
     list-style-position: inside;
-  }
-  /* Datenschutz desktop styles */
-  .datenschutzTitle {
-    font-size: 2em;
-    padding: 20px;
-  }
-  .datenschutzHeadings {
-    font-size: 1.8em;
-    padding: 15px;
-  }
-  .datenschutzParagraphs {
-    font-size: 1em;
-    margin: 15px;
-  }
-  .datenschutzList {
-    padding-left: 30px;
-  }
-  .datenschutzListItems {
-    margin: 8px 0;
-    font-size: 1em;
-  }
-  .datenschutzOrderedList {
-    list-style: decimal;
-    padding-left: 30px;
-  }
+  } */
+  
   /* Kontakt page desktop styling */
   .boxImageContent {
     height: 100px;
@@ -778,26 +755,10 @@
     padding: 10%;
     font-size: 1em;
   }
-  /* Datenschutzerklarung page */
-  .datenschutzTitle,
-  .datenschutzHeadings {
-    font-size: 1.5em;
-    padding: 10px;
-  }
-  .datenschutzParagraphs {
-    font-size: 0.8em;
-    margin: 10px;
-  }
-  .datenschutzList,
-  .datenschutzOrderedList {
-    padding-left: 20px;
-  }
-  .datenschutzListItems {
-    margin: 5px 0;
-    font-size: 0.8em;
-  }
+
+ 
   /* Impressum page */
-  .impressumContainer {
+  /* .impressumContainer {
     padding-bottom: 20px;
     padding-right: 5px;
   }
@@ -805,7 +766,7 @@
   .impressumListItem {
     margin: 10px 0;
     font-size: 0.8em;
-  }
+  } */
   /* Kontakt styling small */
   .box {
     display: flex;
@@ -993,7 +954,7 @@
 }
 
 /* Impressum Common styles */
-.impressumContainer {
+/* .impressumContainer {
   text-align: center;
 }
 .impressumList {
@@ -1007,23 +968,8 @@
 }
 .impressumLink:hover {
   text-decoration: underline;
-}
-/* Datenschutz common styles */
-.datenschutzTitle,
-.datenschutzHeadings {
-  text-align: center;
-}
-.datenschutzParagraphs {
-  text-align: justify;
-}
-.datenschutzList,
-.datenschutzOrderedList {
-  list-style-type: disc;
-  margin: 15px;
-}
-.datenschutzListItems {
-  font-size: 1em;
-}
+} */
+
 /* Footer common styles */
 .footerTop,
 .footerBottom {

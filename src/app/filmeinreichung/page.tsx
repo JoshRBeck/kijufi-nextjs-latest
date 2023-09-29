@@ -1,12 +1,11 @@
-import React from 'react';
-import styles from "../page.module.css";
+import React from "react";
+import styles from "../datenschutz.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import filmEinreichungCamera from "@/images/filmCamera.png.png";
 import FilmClapper from "@/images/filmClapper.png";
 import Submission from "../../components/submission";
 import polygon1 from "@/images/Polygon 1.png";
-
 
 export default function Filmeinreichung() {
   return (
@@ -25,7 +24,11 @@ export default function Filmeinreichung() {
       </div>
       <div className={styles.filmEinreichungCamera}>
         <Image src={filmEinreichungCamera} alt="old school film photo" />
-        <Image src={polygon1} alt="a triangle that is light" className={styles.polgyon}/>
+        <Image
+          src={polygon1}
+          alt="a triangle that is light"
+          className={styles.polgyon}
+        />
       </div>
       <div className={styles.richtLinienContainer}>
         <h2>Richtlinien für die Einreichung:</h2>

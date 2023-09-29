@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../app/page.module.css";
+import styles from "../app/datenschutz.module.css";
 
 const DatenschutzComponent: React.FC = () => {
   const datenschutzData = [
@@ -221,7 +221,10 @@ const DatenschutzComponent: React.FC = () => {
                 {item.type === "unorderedList" && (
                   <ul className={styles.datenschutzList}>
                     {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className={styles.datenschutzListItems}>
+                      <li
+                        key={listItemIndex}
+                        className={styles.datenschutzListItems}
+                      >
                         {listItem}
                       </li>
                     ))}
@@ -230,7 +233,10 @@ const DatenschutzComponent: React.FC = () => {
                 {item.type === "list" && (
                   <ul className={styles.datenschutzOrderedList}>
                     {item.items?.map((listItem, listItemIndex) => (
-                      <li key={listItemIndex} className={styles.datenschutzListItems}>
+                      <li
+                        key={listItemIndex}
+                        className={styles.datenschutzListItems}
+                      >
                         {listItem}
                       </li>
                     ))}
@@ -244,6 +250,5 @@ const DatenschutzComponent: React.FC = () => {
     </div>
   );
 };
-
 
 export default DatenschutzComponent;
