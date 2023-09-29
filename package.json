@@ -25,5 +25,8 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/react-burger-menu": "^2.8.4"
   }
 }

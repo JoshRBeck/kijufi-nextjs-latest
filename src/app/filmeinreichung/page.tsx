@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import filmEinreichungCamera from "@/images/filmCamera.png.png";
 import FilmClapper from "@/images/filmClapper.png";
-import Submission from "@/components/submssion";
+import Submission from "../../components/submission";
 import polygon1 from "@/images/Polygon 1.png";
 
 

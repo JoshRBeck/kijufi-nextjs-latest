@@ -525,48 +525,136 @@
     );
     z-index: 1;
   }
-  /* Navbar Small styling */
-  /* Tiled container */
+  /* Main Page small styling */
+  .titleContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px; /* Adjust the height as needed */
+    font-size: 1em;
+    color: Black;
+  }
+
+  .title {
+    font-family: "Halcyon Black", sans-serif;
+    font-size: 2.5em;
+    color: #e16848;
+    text-shadow: 5px 5px #ccc;
+  }
+
+  .kinderFestival {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
   .tiledContainer {
-    width: 100vh;
-    /* height: 100vh; */
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafcfb; /* Background color for tiles 1 and 3 */
+    overflow-y: auto; /* Enable vertical scrolling for the tiles */
+    flex-grow: 1; /* Make the tiledContainer fill available vertical space */
   }
-  .headingNeu {
-    position: absolute;
-    z-index: 2;
-    max-width: 35%;
-    max-height: 20%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .tile1,
-  .tile2,
-  .tile3,
-  .tile4 {
+
+  .topTiles,
+  .bottomTiles {
+    display: flex;
     width: 100%;
     height: 50vh;
-    position: absolute;
+    justify-content: space-between;
+    flex-grow: 1; /* Make the tiles fill available vertical space */
   }
-  .tile1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .tile1,
+  .tile4 {
+    flex-grow: 1; /* Make the tiles expand and fill the available space */
+    background-color: #fafcfb; /* Background color for tiles 1 and 3 */
   }
+
+  .tile2,
   .tile3 {
+    flex-grow: 1;
+    background-color: #d5e7e3; /* Background color for tiles 2 and 4 */
+  }
+  .aboutSection {
+    background-color: #d5e7e3;
+  }
+  .freiheitTextContainer {
     display: flex;
+    flex-direction: row;
+  }
+  .WirSindGrenzenlos1 {
+    height: 50px;
+    width: 50px;
+  }
+  .WirSindGrenzenlos2 {
+    height: 50px;
+    width: 50px;
+  }
+  /* Navbar Small styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
   }
-  .chairImage {
-    max-width: 40%;
-    max-height: 40%;
+  .socialIcon {
+    width: 35px;
+    height: 35px;
   }
-  .cameraImage {
-    max-width: 40%;
-    max-height: 40%;
+  .kijufi {
+    padding-left: 10px;
+    padding-top: 10px;
   }
+  .navbarLeft {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbarSocials {
+    padding-left: 10px;
+    display: flex;
+  }
+  .navbarRight {
+    display: contents;
+  }
+  .burgerButton {
+    background-color: #e16848;
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    padding: 5%;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: #e16848 !important;
+  }
+  /* Tiled container */
+
   /* footer styling */
   .footerText,
   .footerLink {
@@ -889,7 +977,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #e16848;
+  background-color: #fff;
 }
 .garland {
   background-color: #f5f5f5;
@@ -903,35 +991,7 @@
   font-size: 1.2em;
   padding: 10px;
 }
-/* Tiled Container */
-.tile1 {
-  background-color: #fafcfb;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-}
-.tile3 {
-  background-color: #fafcfb;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 50%;
-}
-.tile2 {
-  background-color: #d5e7e3;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 50%;
-}
-.tile4 {
-  background-color: #d5e7e3;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-}
+
 /* Impressum Common styles */
 .impressumContainer {
   text-align: center;

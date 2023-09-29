@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../page.module.css";
 import Image from "next/image";
 import Flyer from "@/images/Flyer.png";
-import Schedule from "@/components/schedule";
+import Schedule from "../../components/schedule";
 import garland1 from "@/images/garland 1.png";
 import garland2 from "@/images/garland 2.png";
 import garland3 from "@/images/garland 3.png";

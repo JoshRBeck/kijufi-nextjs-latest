@@ -4,8 +4,8 @@ import styles from "./page.module.css";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Head from "next/head";
 
 // const inter = Inter({ subsets: ["latin"] });

@@ -34,36 +34,63 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={styles.navbar}>
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className={styles.burgerButton}
-      >
-        Toggle Menu
-      </button>
-      <Menu
-        isOpen={isOpen}
-        onStateChange={handleMenuStateChange}
-        width={250}
-        right
-      >
-        <ul className={`${styles.headerMenu}`}>
-          {links.map(([path, text]) => {
-            const isActive = pathname === path;
-            return (
-              <li key={path}>
-                <Link
-                  href={path}
-                  className={styles.headerMenuLi}
-                  data-active={isActive}
-                >
-                  {text}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </Menu>
+      <div className={styles.navbarLeft}>
+        <Image src={Kijufi} alt="company logo" className={styles.kijufi} />
+        <div className={styles.navbarSocials}>
+          <div className={styles.socialIconContainer}>
+            <Image
+              src={Instagram}
+              alt="Instagram logo"
+              className={styles.socialIcon}
+            />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image
+              src={Facebook}
+              alt="Facebook"
+              className={styles.socialIcon}
+            />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
+          </div>
+          <div className={styles.socialIconContainer}>
+            <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+          </div>
+        </div>
+      </div>
+      <div className={styles.navbarRight}>
+        <button
+          type="button"
+          onClick={() => setIsOpen(!isOpen)}
+          className={styles.burgerButton}
+        >
+          Menu
+        </button>
+        <Menu
+          isOpen={isOpen}
+          onStateChange={handleMenuStateChange}
+          width={200}
+          right
+        >
+          <ul className={`${styles.headerMenu}`}>
+            {links.map(([path, text]) => {
+              const isActive = pathname === path;
+              return (
+                <li key={path}>
+                  <Link
+                    href={path}
+                    className={styles.headerMenuLi}
+                    data-active={isActive}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </Menu>
+      </div>
     </div>
   );
 };
