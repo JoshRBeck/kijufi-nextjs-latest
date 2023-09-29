@@ -5,6 +5,8 @@ import filmEinreichungCamera from "@/images/filmCamera.png.png";
 import FilmClapper from "@/images/FilmClapper.png";
 import Submission from "@/components/submssion";
 import polygon1 from "@/images/Polygon 1.png";
+import React from 'react';
+
 
 export default function Filmeinreichung() {
   return (
