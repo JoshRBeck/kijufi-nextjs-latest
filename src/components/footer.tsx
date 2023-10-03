@@ -3,12 +3,12 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import Instagram from "../images/Instagram.png";
-import Facebook from "../images/Facebook.png";
-import Youtube from "../images/Youtube.png";
-import M from "../images/M.png";
-import ZukunftsPaket from "../images/zukunftspaket.png";
-import byKijufi from "../images/by-kijufi.png";
+import Instagram from "@/images/Instagram.png";
+import Facebook from "@/images/Facebook.png";
+import Youtube from "@/images/Youtube.png";
+import M from "@/images/M.png";
+import ZukunftsPaket from "@/images/zukunftspaket.png";
+import byKijufi from "@/images/by-kijufi.png";
 import styles from "../app/page.module.css";
 
 const Footer: React.FC = () => {
