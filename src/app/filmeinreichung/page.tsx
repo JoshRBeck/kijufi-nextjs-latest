@@ -3,7 +3,7 @@ import styles from "../datenschutz.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import filmEinreichungCamera from "@/images/filmCamera.png.png";
-import filmClapper from "@/images/filmClapper.png";
+// import filmClapper from "@/images/filmClapper.png";
 import Submission from "../../components/submission";
 import polygon1 from "@/images/Polygon 1.png";
 
@@ -35,7 +35,7 @@ export default function Filmeinreichung() {
       </div>
       <Submission />
       <div className={styles.filmClapperContainer}>
-        <Image src={filmClapper} alt="film clapper" />
+        {/* <Image src={filmClapper} alt="film clapper" /> */}
         <p className={styles.filmClapperText}>
           <span className={styles.filmClapperHeading}>
             Merken Sie sich Ihren Kalender vor:
