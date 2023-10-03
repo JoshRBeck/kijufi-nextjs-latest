@@ -38,23 +38,27 @@ const Navbar: React.FC = () => {
         <div className={styles.navbarSocials}>
           <div className={styles.socialIconContainer}>
             <Image
-              src={Instagram}
+              height={30}
+              width={30} src={Instagram}
               alt="Instagram logo"
               className={styles.socialIcon}
             />
           </div>
           <div className={styles.socialIconContainer}>
             <Image
-              src={Facebook}
+              height={30}
+              width={30} src={Facebook}
               alt="Facebook"
               className={styles.socialIcon}
             />
           </div>
           <div className={styles.socialIconContainer}>
-            <Image src={Youtube} alt="Youtube" className={styles.socialIcon} />
+            <Image height={30}
+              width={30} src={Youtube} alt="Youtube" className={styles.socialIcon} />
           </div>
           <div className={styles.socialIconContainer}>
-            <Image src={M} alt="M Social Media" className={styles.socialIcon} />
+            <Image height={30}
+              width={30} src={M} alt="M Social Media" className={styles.socialIcon} />
           </div>
         </div>
       </div>
@@ -69,25 +73,27 @@ const Navbar: React.FC = () => {
         <Menu
           isOpen={isOpen}
           onStateChange={handleMenuStateChange}
-          width={200}
+          width={'60%'}
           right
         >
-          <ul className={`${styles.headerMenu}`}>
-            {links.map(([path, text]) => {
-              const isActive = pathname === path;
-              return (
-                <li key={path}>
-                  <Link
-                    href={path}
-                    className={styles.headerMenuLi}
-                    data-active={isActive}
-                  >
-                    {text}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          <div>
+            <ul className={`${styles.headerMenu}`}>
+              {links.map(([path, text]) => {
+                const isActive = pathname === path;
+                return (
+                  <li key={path}>
+                    <Link
+                      href={path}
+                      className={styles.headerMenuLi}
+                      data-active={isActive}
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </Menu>
       </div>
     </div>
