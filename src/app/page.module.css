@@ -536,6 +536,7 @@
   .tile3 {
     flex-grow: 1;
     background-color: #d5e7e3; /* Background color for tiles 2 and 4 */
+    width: 50%;
   }
   .aboutSection {
     background-color: #d5e7e3;
