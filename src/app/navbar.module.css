@@ -1,0 +1,76 @@
+@media (max-width: 700px) {
+  /* Navbar Small styling */
+  .socialIcon {
+    width: 35px;
+    height: 35px;
+  }
+  .kijufi {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .burgerButton {
+    background-color: #e16848;
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    padding: 5%;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: #e16848 !important;
+  }
+}
+@media (min-width: 701px) {
+  .kijufi {
+    width: 137.037px;
+    height: 62.767px;
+    flex-shrink: 0;
+  }
+}
+/* Common Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px 36px 70px;
+  flex-shrink: 0;
+}
+.navbarSocials {
+  display: flex;
+  margin-top: 25px;
+}
+.kijufiImage {
+  margin-top: 25px;
+  margin-left: 40px;
+}

@@ -9,15 +9,12 @@ import Instagram from "@/images/Instagram.png";
 import Facebook from "@/images/Facebook.png";
 import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
-import styles from "../app/page.module.css";
+import styles from "../app/navbar.module.css";
 import { reveal as Menu } from "react-burger-menu";
 
 const Navbar: React.FC = () => {
-  console.log("Navbar component rendered");
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  console.log("isOpen state:", isOpen);
-  console.log("pathname:", pathname);
   const links = [
     ["/", "Homepage"],
     ["/programm", "Programm"],
@@ -28,7 +25,6 @@ const Navbar: React.FC = () => {
 
   const handleMenuStateChange = (state: { isOpen: boolean }) => {
     setIsOpen(state.isOpen);
-    console.log("Menu state:", state.isOpen);
   };
 
   return (
@@ -39,7 +35,8 @@ const Navbar: React.FC = () => {
           <div className={styles.socialIconContainer}>
             <Image
               height={30}
-              width={30} src={Instagram}
+              width={30}
+              src={Instagram}
               alt="Instagram logo"
               className={styles.socialIcon}
             />
@@ -47,18 +44,29 @@ const Navbar: React.FC = () => {
           <div className={styles.socialIconContainer}>
             <Image
               height={30}
-              width={30} src={Facebook}
+              width={30}
+              src={Facebook}
               alt="Facebook"
               className={styles.socialIcon}
             />
           </div>
           <div className={styles.socialIconContainer}>
-            <Image height={30}
-              width={30} src={Youtube} alt="Youtube" className={styles.socialIcon} />
+            <Image
+              height={30}
+              width={30}
+              src={Youtube}
+              alt="Youtube"
+              className={styles.socialIcon}
+            />
           </div>
           <div className={styles.socialIconContainer}>
-            <Image height={30}
-              width={30} src={M} alt="M Social Media" className={styles.socialIcon} />
+            <Image
+              height={30}
+              width={30}
+              src={M}
+              alt="M Social Media"
+              className={styles.socialIcon}
+            />
           </div>
         </div>
       </div>
@@ -73,7 +81,7 @@ const Navbar: React.FC = () => {
         <Menu
           isOpen={isOpen}
           onStateChange={handleMenuStateChange}
-          width={'60%'}
+          width={"60%"}
           right
         >
           <div>

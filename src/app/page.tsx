@@ -10,6 +10,7 @@ import CoolKids2 from "@/images/Cool-Kids-Feedback.png";
 import WirSindGrenzenlos1 from "@/images/Wir-Sind-Grenzenlos1.png";
 import WirSindGrenzenlos2 from "@/images/Wir-Sind-Grenzenlos2.png";
 import MovieCut from "@/images/moviecut.png";
+// import CarouselComponent from "../components/carousel";
 import Yorck from "@/images/Yorck-Kinogruppe.png";
 import MPower from "@/images/MPower-e.V..png";
 import Songs from "@/images/Songs-for-Rights.png";
@@ -57,19 +58,21 @@ export default function Home() {
         <div className={styles.aboutSection}>
           <h2 className={styles.aboutHeader}>Über das Festival</h2>
           <p className={styles.aboutParagraph}>
-            Dieses Festival ist eine Veranstaltung, die von jungen Menschen
-            selbst organisiert wird. Das vom 8. bis 10. Dezember 2023
-            stattfindende Festival will mit Hilfe des fesselnden Mediums Film
-            die Rechte von Kindern feiern und sich für sie einsetzen. Im Rahmen
-            des Festivals werden sechs von jungen Filmemachern erstellte
-            Kurzfilme gezeigt, die zum Nachdenken anregen, Gespräche anregen und
-            wichtige Themen beleuchten.
+            Gemeinsam Grenzenlos ist ein Film-Festival für alle Generationen:
+            Junge Filmemacher:innen sind eingeladen, mit ihren Ideen und
+            Überzeugungen ins Spotlight zu treten. Sagt, was ihr zu sagen habt.
+            Zeigt, was euch bewegt und was euch wichtig ist! Auch ohne Film sind
+            Kinder und Jugendliche eingeladen, als Zuschauer:innen Teil eines
+            vibrierenden Festivalerlebnisses zu werden. Trefft auf engagierte
+            Gleichaltrige. Lasst euch inspirieren. Alle Erwachsenen! Kommt –
+            denn ihr seid genauso eingeladen. Ihr seid der Teil von Gemeinsam,
+            der Grenzen setzen, aber auch loswerden kann.
           </p>
           <h5 className={styles.aboutWarning}>
             ⚠️ Achtung! Tickets sind ab Anfang November erhältlich
           </h5>
-          <button type="button" className={styles.aboutTicket}>
-            Tickets
+          <button type="button" className={styles.programmButtonAboutSection}>
+            Programm
           </button>
         </div>
         <div className={styles.freiheitTextContainer}>
@@ -82,11 +85,10 @@ export default function Home() {
             />
           </div>
           <div className={styles.freiheitText}>
-            <h6>#Freiheit #Fantasie</h6>
+            <h2> #Fantasie #Miteinander</h2>
             <p>
-              Erleben Sie mit uns eine inspirierende und integrative
-              Veranstaltung! Wir wünschen uns Zusammenhalt, Einigkeit und
-              grenzenlose Fantasie von allen Teilnehmern.
+              Was wir brauchen ist: Zusammenhalt, Miteinander und viel Fantasie.
+              Also weg mit den Grenzen im Kopf.
             </p>
           </div>
         </div>
@@ -171,6 +173,7 @@ export default function Home() {
           <h4 className={styles.sponsorHeading}>
             Unsere Partner und Sponsoren
           </h4>
+          {/* <CarouselComponent /> */}
           <Image
             src={Yorck}
             alt="Yorck KinoGruppe"

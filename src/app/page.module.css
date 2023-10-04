@@ -250,6 +250,71 @@
 }
 /* Larger than 700px styles */
 @media (min-width: 701px) {
+  /* Main page Large styling */
+  .countdownWrapper {
+    padding: 25px 0; /* Shorthand for padding-top and padding-bottom */
+  }
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d5e7e3;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .aboutSection h2,
+  .aboutSection p,
+  .aboutSection h5 {
+    color: #333c3a;
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .aboutSection h2 {
+    padding-bottom: 15px;
+    font-size: 1.8755rem;
+    font-weight: 500;
+  }
+  .aboutSection p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5625rem;
+  }
+  .aboutSection h5 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5625rem;
+    line-height: 150%;
+    padding: 15px 0 10px; /* Shorthand for padding-top, padding-bottom, and padding-right */
+  }
+  .programmButtonAboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.06075rem;
+    background: #fff;
+    width: 8rem;
+    height: 2.5rem;
+    border-style: none;
+    box-shadow: 4px 4px 0px rgb(0 0 0);
+  }
+  .freiheitTextContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+  }
+  .freiheitText {
+    width: 20rem;
+    height: 8.06469rem;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .freiheitText h2 {
+    padding: 10px;
+  }
   /* Footer desktop styles */
   .footerTop {
     background-color: #e16848;
@@ -499,13 +564,19 @@
   .title {
     font-family: "Halcyon Black", sans-serif;
     font-size: 2.5em;
+    line-height: normal;
+    font-weight: 400;
     color: #e16848;
-    text-shadow: 5px 5px #ccc;
+    text-align: center;
+    text-shadow: 10.099002838134766px 7.213573455810547px 0px #d5e7e3;
   }
 
   .kinderFestival {
     font-size: 1.4em;
     font-weight: 700;
+    font-family: "Halcyon Black", sans-serif;
+    text-align: center;
+    font-style: normal;
   }
 
   .tiledContainer {
@@ -553,55 +624,7 @@
     height: 50px;
     width: 50px;
   }
-  /* Navbar Small styling */
-  
-  .socialIcon {
-    width: 35px;
-    height: 35px;
-  }
 
-
-  .kijufi {
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  
-  .burgerButton {
-    background-color: #e16848;
-    border-radius: 50px;
-    width: 80px;
-    height: 40px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
-
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
-
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-    padding: 5%;
-  }
-
-  /* Styling of overlay */
-  .bm-overlay {
-    background: #e16848 !important;
-  }
   /* Tiled container */
 
   /* footer styling */
@@ -875,15 +898,6 @@
   }
 }
 /* Common styles */
-.kijufiImage {
-  margin-top: 25px;
-  margin-left: 40px;
-}
-
-.navbarSocials {
-  display: flex;
-  margin-top: 25px
-}
 
 .footerTop {
   background-color: #e16848;
@@ -897,26 +911,10 @@
 .byKijufiImage {
   padding-top: 10px;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #fff;
-  
-  display: flex;
-  justify-content: space-between;
-
-  padding: 20px 70px 36px 70px;
-}
-
 .headerMenu {
   display: flex;
   justify-content: space-between;
 }
-
-
 .garland {
   background-color: #f5f5f5;
 }
@@ -929,7 +927,6 @@
   font-size: 1.2em;
   padding: 10px;
 }
-
 /* Footer common styles */
 .footerTop,
 .footerBottom {
@@ -1005,6 +1002,7 @@
 .countdownWrapper {
   display: flex;
   justify-content: center;
+  background: #fff;
 }
 .countdownItem {
   text-align: center;
@@ -1014,11 +1012,18 @@
   font-weight: bold;
   color: #e16848;
   padding: 5px;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 0.45013rem;
+  font-weight: 900;
 }
 .countdownText {
   font-size: 0.8em;
   color: #e16848;
   padding: 5px;
+  text-align: center;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Film Einreichung Containers */
