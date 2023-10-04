@@ -16,7 +16,7 @@ function Map(props: any) {
     id: "google-map-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
   });
-
+  console.log(process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY);
   const markers = [
     { id: 1, lat: 52.52902, lng: 13.43044 },
     { id: 2, lat: 52.53043, lng: 13.41372 },
@@ -39,7 +39,7 @@ function Map(props: any) {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={200}
+      zoom={12}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
