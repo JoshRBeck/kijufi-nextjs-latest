@@ -392,6 +392,41 @@
     width: 17.4375rem;
     height: 23.25rem;
   }
+  .zusammenheitContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+  }
+  .zusammenheitText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 50vh;
+  }
+  .zusammenheitText h4 {
+    font-size: 2.5rem;
+    text-align: justify;
+  }
+  .zusammenheitImage {
+    width: 50vh;
+  }
+  .mainPageKontaktContainer {
+    display: flex;
+    background-color: #d5e7e3;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .mainPageKontaktText {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vh;
+  }
   /* Footer desktop styles */
   .footerTop {
     background-color: #e16848;

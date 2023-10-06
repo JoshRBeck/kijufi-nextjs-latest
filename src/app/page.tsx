@@ -125,15 +125,16 @@ export default function Home() {
         </div>
         <div className={styles.zusammenheitContainer}>
           <div className={styles.zusammenheitText}>
-            <h4>#Zusammenhalt #Leben</h4>
+            <h4>#Freiheit #Leben</h4>
             <p>
-              Gemeinsam werden wir Ausgrenzung und Diskriminierung bekämpfen,
-              Vielfalt feiern und die Freiheit nutzen, um eine bessere Welt zu
-              schaffen. Ihre einzigartigen Ideen und Ihre Stimme sind
-              entscheidend für unseren gemeinsamen Erfolg!
+              Wir engagieren uns gegen Ausgrenzung und Diskriminierung. Wir
+              schlagen Brücken der Begegnung, feiern Vielfalt und nehmen uns
+              Freiheit. Die Freiheit, eigene Ideen zu haben, die Freiheit,
+              mitzureden und die Freiheit, die Welt, in der wir leben, besser zu
+              machen.
             </p>
           </div>
-          <div className={styles.zusammenheiImage}>
+          <div className={styles.zusammenheitImage}>
             <Image
               src={CoolKids2}
               alt="Cool kids Feedback"
@@ -155,18 +156,18 @@ export default function Home() {
           </div>
           <div className={styles.mainPageKontaktText}>
             <h3 className={styles.mainPageText}>
-              Treten Sie einem Team junger Kreativer bei
+              Werde Teil der Festival-Crew
             </h3>
             <p>
               Das Filmfestival wird maßgeblich von Kindern und Jugendlichen
               veranstaltet. Die junge Festival-Crew trifft alle wichtigen
-              Entscheidungen – vom Titel und Thema des Festival Festivals über
-              die Filmauswahl bis hin zur Festivalverpflegung. Sie sind es auch,
-              die das Festival hosten: Als Filmvorführer:innen, Moderator:innen,
+              Entscheidungen – vom Titel und Thema des Festivals über die
+              Filmauswahl bis hin zum Rahmenprogramm. Sie sind es auch, die das
+              Festival hosten: als Filmvorführer:innen, Moderator:innen,
               Presse-Sprecher:innen und Gäste-Betreuer:innen. Du willst
               mitmachen? Melde Dich bei uns und komm‘ vorbei!
             </p>
-            <button type="button">Kontakt</button>
+            <button type="button">Info Festival Crew</button>
           </div>
         </div>
         <div className={styles.mainPageFilmEinreichen}>
