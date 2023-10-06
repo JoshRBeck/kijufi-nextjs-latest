@@ -251,6 +251,65 @@
 /* Larger than 700px styles */
 @media (min-width: 701px) {
   /* Main page Large styling */
+  .titleContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px; /* Adjust the height as needed */
+    color: Black;
+  }
+
+  .title {
+    font-family: "Halcyon Black", sans-serif;
+    font-size: 5em;
+    line-height: normal;
+    font-weight: 400;
+    color: #e16848;
+    text-align: center;
+    text-shadow: 10.099002838134766px 7.213573455810547px 0px #d5e7e3;
+  }
+
+  .kinderFestival {
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: "Halcyon Black", sans-serif;
+    text-align: center;
+    font-style: normal;
+  }
+  .tiledContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafcfb; /* Background color for tiles 1 and 4 */
+    overflow-y: auto; /* Enable vertical scrolling for the tiles */
+    flex-grow: 1; /* Make the tiledContainer fill available vertical space */
+  }
+
+  .topTiles,
+  .bottomTiles {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-between;
+  }
+
+  .tile1,
+  .tile4 {
+    flex-grow: 1; /* Make the tiles expand and fill the available space */
+    background-color: #fafcfb; /* Background color for tiles 1 and 4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+  }
+
+  .tile2,
+  .tile3 {
+    flex-grow: 1;
+    background-color: #d5e7e361; /* Background color for tiles 2 and 3 */
+    width: 50vh;
+  }
   .countdownWrapper {
     padding: 25px 0; /* Shorthand for padding-top and padding-bottom */
   }
@@ -314,6 +373,24 @@
   }
   .freiheitText h2 {
     padding: 10px;
+  }
+  .freiheitImageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  .freiheitImageContainer img {
+    border-radius: 1.25rem; /* Rounded shape */
+    padding: 10px; /* Space between the image and the border */
+    margin-bottom: 10px; /* Space between images */
+  }
+  .position-1-erdkugel-mit-menschen-und-klappe {
+    border: 6px solid #ececec;
+    background: #76aea6;
+    border-radius: 1.05213rem;
+    width: 17.4375rem;
+    height: 23.25rem;
   }
   /* Footer desktop styles */
   .footerTop {

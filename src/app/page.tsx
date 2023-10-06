@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import Chair from "@/images/chair.png";
 import Camera from "@/images/camera.png";
@@ -8,7 +9,8 @@ import Countdown from "../components/countdown";
 import CoolKids1 from "@/images/Cool-Kids-Research.png";
 import CoolKids2 from "@/images/Cool-Kids-Feedback.png";
 import WirSindGrenzenlos1 from "@/images/Wir-Sind-Grenzenlos1.png";
-import WirSindGrenzenlos2 from "@/images/Wir-Sind-Grenzenlos2.png";
+import gemeinsamgrenzenlos from "@/images/Gemeinsam-Grenzenlos.png";
+import position3 from "@/images/position-1-erdkugel-mit-menschen-und-klappe.png";
 import MovieCut from "@/images/moviecut.png";
 // import CarouselComponent from "../components/carousel";
 import Yorck from "@/images/Yorck-Kinogruppe.png";
@@ -72,7 +74,7 @@ export default function Home() {
             ⚠️ Achtung! Tickets sind ab Anfang November erhältlich
           </h5>
           <button type="button" className={styles.programmButtonAboutSection}>
-            Programm
+            <Link href="/programm">Programm</Link>
           </button>
         </div>
         <div className={styles.freiheitTextContainer}>
@@ -93,21 +95,33 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.freiheitImageContainer}>
-          <Image
-            src={WirSindGrenzenlos1.src} // Use .src to access the image source
-            alt="We are borderless"
-            width={WirSindGrenzenlos1.width} // Use .width to set the width
-            height={WirSindGrenzenlos1.height} // Use .height to set the height
-            className={styles.WirSindGrenzenlos1}
-          />
-          <Image
-            src={WirSindGrenzenlos2.src} // Use .src to access the image source
-            alt="We are borderless"
-            width={WirSindGrenzenlos2.width} // Use .width to set the width
-            height={WirSindGrenzenlos2.height} // Use .height to set the height
-            /* Dont forget to make the classNames correct */
-            className={styles.WirSindGrenzenlos2}
-          />
+          <div>
+            <Image
+              src={WirSindGrenzenlos1.src} // Use .src to access the image source
+              alt="We are borderless"
+              width={WirSindGrenzenlos1.width} // Use .width to set the width
+              height={WirSindGrenzenlos1.height} // Use .height to set the height
+              className={styles.WirSindGrenzenlos1}
+            />
+          </div>
+          <div>
+            <Image
+              src={gemeinsamgrenzenlos.src} // Use .src to access the image source
+              alt="We are borderless"
+              width={gemeinsamgrenzenlos.width} // Use .width to set the width
+              height={gemeinsamgrenzenlos.height} // Use .height to set the height
+              className={styles.gemeinsamgrenzenlos}
+            />
+          </div>
+          <div>
+            <Image
+              src={position3.src}
+              alt="erd kugel mit klappe"
+              width={position3.width}
+              height={position3.height}
+              className={styles.position3}
+            />
+          </div>
         </div>
         <div className={styles.zusammenheitContainer}>
           <div className={styles.zusammenheitText}>
