@@ -9,7 +9,7 @@ import Youtube from "@/images/Youtube.png";
 import M from "@/images/M.png";
 import ZukunftsPaket from "@/images/zukunftspaket.png";
 import byKijufi from "@/images/by-kijufi.png";
-import styles from "../app/page.module.css";
+import styles from "../app/footer.module.css";
 
 const Footer: React.FC = () => {
   const pathname = usePathname();

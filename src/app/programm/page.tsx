@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../page.module.css";
+import styles from "../programm.module.css"
 import Image from "next/image";
 import Flyer from "@/images/Flyer.png";
 import Schedule from "../../components/schedule";

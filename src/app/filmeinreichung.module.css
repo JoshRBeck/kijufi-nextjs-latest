@@ -1,0 +1,181 @@
+@media (min-width: 701px) {
+  .filmeinreichungTopContainer,
+  .filmEinreichungCamera img,
+  .schritteContainer,
+  .richtLinienContainer,
+  .schritteName,
+  .schritteBeschreibung,
+  .mehrInfoButtonContainer,
+  .downloadButton,
+  .mehrInfoButton,
+  .filmEinreichenButtonText,
+  .guidelinesListContainer,
+  .guidelinesListItems,
+  .guidelinesListHeadlines,
+  .filmClapperHeading,
+  .filmClapperText,
+  .filmeEinreichenButtonContainer,
+  .filmEinreichenButton,
+  .filmEinreichenText,
+  .countdownNumber,
+  .countdownText {
+    font-family: "Halcyon Black", sans-serif;
+  }
+  .filmeinreichungTopContainer,
+  .filmEinreichungCamera img,
+  .schritteContainer,
+  .richtLinienContainer,
+  .mehrInfoButtonContainer,
+  .guidelinesListContainer,
+  .filmEinreichenButtonContainer {
+    text-align: center;
+  }
+  .filmeinreichungTopContainer {
+    padding: 10%;
+  }
+  .filmeinreichungTopContainer h1,
+  .filmeinreichungTopContainer h4,
+  .filmeinreichungTopContainer p {
+    padding-bottom: 10px;
+  }
+  .filmEinreichungCamera img {
+    height: 35%;
+    width: 35%;
+    padding-left: 10%;
+  }
+  .richtLinienContainer {
+    margin: 10%;
+  }
+  .richtLinienContainer h2 {
+    margin-top: 10px;
+  }
+  .schritteContainer,
+  .guidelinesListContainer {
+    padding: 10%;
+  }
+  .schritteContainer {
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .schritteNummer {
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .schritteName,
+  .filmClapperHeading {
+    font-weight: 700;
+  }
+
+  .schritteBeschreibung,
+  .filmClapperText {
+    padding-top: 5px;
+    margin: 10%;
+  }
+  .mehrInfoButtonContainer {
+    padding: 5%;
+  }
+
+  .guidelinesList {
+    margin: 0;
+    padding-left: 1em;
+  }
+  .guidelinesListItems {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  .guidelinesListHeadlines {
+    font-weight: 700;
+  }
+  .filmeEinreichenButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .filmEinreichenButton {
+    background-color: #e16848;
+    border-radius: 25px;
+    width: 80%;
+    height: 60px;
+  }
+  .filmEinreichenText {
+    padding: 10%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 700px) {
+  .filmeinreichungTopContainer {
+    padding: 5%;
+    text-align: left;
+  }
+  .filmeinreichungTopContainer h1 {
+    font-size: 2.4em;
+  }
+  .filmeinreichungTopContainer h4 {
+    margin: 20px 0px;
+    font-size: 1.6em;
+  }
+  .richtLinienContainer {
+    padding: 10%;
+  }
+  .schritteContainer {
+    padding: 10%;
+  }
+  .schritteWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  .schritte {
+    width: 100%; /* Each schritte takes the full width of its grid cell */
+  }
+  .polygon {
+    width: 65%;
+    position: relative;
+    right: 15%;
+    top: 5%;
+  }
+}
+.schritteColorOne {
+  color: #5ba092;
+}
+.schritteColorTwo {
+  color: #f6cc5e;
+}
+.schritteColorThree {
+  color: #e16848;
+}
+.schritteColorFour {
+  color: #5ba092;
+}
+.schritteColorFive {
+  color: #f6cc5e;
+}
+.schritteColorSix {
+  color: #ffcaaf;
+}
+.schritteColorSeven {
+  color: #d5e7e3;
+}
+.schritteColorEight {
+  color: #fae8df;
+}
+/* Common styles for both mobile and desktop */
+.filmeinreichungTopContainer {
+  font-family: "Halcyon Black", sans-serif;
+}
+.filmeinreichungTopContainer h1 {
+  padding-bottom: 10px;
+}
+.filmeinreichungTopContainer h4 {
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+.filmeinreichungTopContainer p {
+  padding-bottom: 10px;
+}
+.filmEinreichungCamera img {
+  height: 35%;
+  width: 35%;
+  padding-left: 10%;
+}

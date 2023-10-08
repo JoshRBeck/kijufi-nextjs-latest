@@ -1,0 +1,75 @@
+@media (min-width: 701px) {
+  /* Footer desktop styles */
+  .footerTop {
+    background-color: #e16848;
+  }
+  .footerText,
+  .footerLiink {
+    font-weight: 600;
+    font-size: 1em;
+  }
+  .footerBottomLinks {
+    display: flex;
+    list-style: none;
+  }
+  .footerLink {
+    text-decoration: none;
+    color: #333c3a;
+  }
+  .footerBottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 700px) {
+  /* footer styling */
+  .footerText,
+  .footerLink {
+    text-align: center;
+    padding-left: 5px;
+  }
+  .footerTopLeft,
+  .footerLinksList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinksList {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .footerBottom,
+  .footerTop {
+    flex-direction: column;
+  }
+}
+/* Footer common styles */
+.footerTop,
+.footerBottom {
+  display: flex;
+  align-items: center;
+}
+.zukunftImage,
+.byKijufiImage {
+  margin: 15px;
+}
+.footerBottomSocials,
+.socialIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.footerTop {
+  background-color: #e16848;
+}
+.footerLinksList {
+  list-style-type: none;
+}
+.footerText {
+  padding: 15px;
+}
+.byKijufiImage {
+  padding-top: 10px;
+}

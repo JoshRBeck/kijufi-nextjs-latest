@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../page.module.css";
+import styles from "../../app/kontakt.module.css";
 import KontaktForm from "../../components/kontakt";
 import Map from "../../components/map";
 import Image from "next/image";
