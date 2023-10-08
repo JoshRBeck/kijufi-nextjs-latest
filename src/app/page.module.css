@@ -1,13 +1,14 @@
 /* Halcyon Black Fonts */
 @font-face {
   font-family: "Halcyon Black";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-black.otf") format("otf");
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Black.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Black";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-blackitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Black\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -15,13 +16,14 @@
 /* Halcyon Bold Fonts */
 @font-face {
   font-family: "Halcyon Bold";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-bold.otf") format("otf");
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Bold.otf")
+    format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Bold";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-bolditalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Bold\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -29,14 +31,14 @@
 /* Halcyon Hairline Fonts */
 @font-face {
   font-family: "Halcyon Hairline";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-hairline.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Hairline.otf")
     format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Hairline";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-hairlineitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Hairline\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -44,13 +46,14 @@
 /* Halcyon Light Fonts */
 @font-face {
   font-family: "Halcyon Light";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-light.otf") format("otf");
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Light.otf")
+    format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Light";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-lightitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Light\ Italic.otf.")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -58,14 +61,14 @@
 /* Halcyon Medium Fonts */
 @font-face {
   font-family: "Halcyon Medium";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-medium.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Medium.otf")
     format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Medium";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-mediumitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Medium\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -73,14 +76,14 @@
 /* Halcyon Regular Fonts */
 @font-face {
   font-family: "Halcyon Regular";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-regular.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Regular.otf")
     format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Regular";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-regularitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Regular\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -88,14 +91,14 @@
 /* Halcyon Semibold Fonts */
 @font-face {
   font-family: "Halcyon Semibold";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-semibold.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ SemiBold.otf")
     format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Semibold";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-semibolditalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ SemiBold\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -103,13 +106,14 @@
 /* Halcyon Thin Fonts */
 @font-face {
   font-family: "Halcyon Thin";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-thin.otf") format("otf");
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Thin.otf")
+    format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Halcyon Thin";
-  src: url("./fonts/Demo_Fonts/Fontspring-DEMO-halcyon-thinitalic.otf")
+  src: url("../app/fonts/Halcyon/Studio\ Buchanan\ -\ Halcyon\ Thin\ Italic.otf")
     format("otf");
   font-weight: normal;
   font-style: italic;
@@ -294,35 +298,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fafcfb; /* Background color for tiles 1 and 4 */
+    background-color: #d5e7e3; /* Background color for all tiles */
     overflow-y: auto; /* Enable vertical scrolling for the tiles */
     flex-grow: 1; /* Make the tiledContainer fill available vertical space */
+    padding: 20px; /* Add padding for spacing */
   }
 
   .topTiles,
   .bottomTiles {
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 40vh; /* Reduce the height of the tiles */
     justify-content: space-between;
+    flex-grow: 1; /* Make the tiles fill available vertical space */
   }
 
   .tile1,
   .tile4 {
     flex-grow: 1; /* Make the tiles expand and fill the available space */
-    background-color: #fafcfb; /* Background color for tiles 1 and 4 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vh;
   }
 
   .tile2,
   .tile3 {
     flex-grow: 1;
-    background-color: #d5e7e361; /* Background color for tiles 2 and 3 */
-    width: 50vh;
+    width: 50%;
   }
+
   .countdownWrapper {
     padding: 25px 0; /* Shorthand for padding-top and padding-bottom */
   }
@@ -536,7 +537,6 @@
     text-align: center;
     font-style: normal;
   }
-
   .tiledContainer {
     display: flex;
     flex-direction: column;
@@ -545,7 +545,6 @@
     overflow-y: auto; /* Enable vertical scrolling for the tiles */
     flex-grow: 1; /* Make the tiledContainer fill available vertical space */
   }
-
   .topTiles,
   .bottomTiles {
     display: flex;
@@ -558,7 +557,7 @@
   .tile1,
   .tile4 {
     flex-grow: 1; /* Make the tiles expand and fill the available space */
-    background-color: #fafcfb; /* Background color for tiles 1 and 3 */
+    background-color: #d5e7e3; /* Background color for tiles 2 and 4 */
   }
 
   .tile2,

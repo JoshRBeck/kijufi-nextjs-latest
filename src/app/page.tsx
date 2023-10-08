@@ -45,7 +45,13 @@ export default function Home() {
           <div className={styles.bottomTiles}>
             <div className={styles.tile3}></div>
             <div className={styles.tile4}>
-              {" "}
+              <Image
+                src={HeadingNeu}
+                alt="Festival heading image"
+                className={styles.HeadingNeu}
+                width={HeadingNeu.width}
+                height={HeadingNeu.height}
+              />{" "}
               <Image
                 src={Camera}
                 alt="Camera image"
