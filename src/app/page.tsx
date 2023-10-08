@@ -18,20 +18,22 @@ import MPower from "@/images/MPower-e.V..png";
 import Songs from "@/images/Songs-for-Rights.png";
 import IYCE from "@/images/IYCE.png";
 import StadtBibliothek from "@/images/Stadtbibliothek-Berlin-Mitte.png";
+import tiledImage from "@/images/Frame 47.png";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <div className={styles.titleContainer}>
-          <h1 className={styles.title}>Gemeinsam Grenzenlos</h1>
-          <p className={styles.kinderFestival}>
-            Das Kinderrechte-Filmfestival 2023
-          </p>
-        </div>
         <div className={styles.tiledContainer}>
+          <Image
+            src={tiledImage}
+            alt="tiled image background"
+            width={tiledImage.width}
+            height={tiledImage.height}
+          />
+          {/* 
           <div className={styles.topTiles}>
-            <div className={styles.tile1}>
+            <div className={`${styles.tile1} ${styles.imageContainer}`}>
               <Image
                 src={Chair}
                 alt="chair image"
@@ -41,10 +43,8 @@ export default function Home() {
               />
             </div>
             <div className={styles.tile2}></div>
-          </div>
-          <div className={styles.bottomTiles}>
             <div className={styles.tile3}></div>
-            <div className={styles.tile4}>
+            <div className={`${styles.tile4} ${styles.imageContainer}`}>
               <Image
                 src={HeadingNeu}
                 alt="Festival heading image"
@@ -61,6 +61,7 @@ export default function Home() {
               />
             </div>
           </div>
+        */}
         </div>
         <Countdown />
         <div className={styles.aboutSection}>

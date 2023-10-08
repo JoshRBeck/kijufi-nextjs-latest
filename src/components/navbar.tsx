@@ -104,6 +104,12 @@ const Navbar: React.FC = () => {
           </div>
         </Menu>
       </div>
+      <div className={styles.titleContainer}>
+        <h1 className={styles.title}>Gemeinsam Grenzenlos</h1>
+        <p className={styles.kinderFestival}>
+          Das Kinderrechte-Filmfestival 2023
+        </p>
+      </div>
     </div>
   );
 };
