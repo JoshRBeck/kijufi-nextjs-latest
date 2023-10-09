@@ -12,7 +12,7 @@ import WirSindGrenzenlos1 from "@/images/Wir-Sind-Grenzenlos1.png";
 import gemeinsamgrenzenlos from "@/images/Gemeinsam-Grenzenlos.png";
 import position3 from "@/images/position-1-erdkugel-mit-menschen-und-klappe.png";
 import MovieCut from "@/images/moviecut.png";
-// import CarouselComponent from "../components/carousel";
+import CarouselComponent from "../components/carousel";
 import Yorck from "@/images/Yorck-Kinogruppe.png";
 import MPower from "@/images/MPower-e.V..png";
 import Songs from "@/images/Songs-for-Rights.png";
@@ -187,11 +187,9 @@ export default function Home() {
           </button>
         </div>
         <div className={styles.sponsorsContainer}>
-          <h4 className={styles.sponsorHeading}>
-            Unsere Partner
-          </h4>
-          {/* <CarouselComponent /> */}
-          <Image
+          <h4 className={styles.sponsorHeading}>Unsere Partner</h4>
+          <CarouselComponent />
+          {/* <Image
             src={Yorck}
             alt="Yorck KinoGruppe"
             width={Yorck.width}
@@ -225,7 +223,7 @@ export default function Home() {
             width={StadtBibliothek.width}
             height={StadtBibliothek.height}
             className={styles.StadtBibliothek}
-          />
+          /> */}
         </div>
       </div>
     </main>
