@@ -137,28 +137,28 @@
   }
 }
 .schritteColorOne {
-  color: #5ba092;
+  background-color: #5ba092;
 }
 .schritteColorTwo {
-  color: #f6cc5e;
+  background-color: #f6cc5e;
 }
 .schritteColorThree {
-  color: #e16848;
+  background-color: #e16848;
 }
 .schritteColorFour {
-  color: #5ba092;
+  background-color: #5ba092;
 }
 .schritteColorFive {
-  color: #f6cc5e;
+  background-color: #f6cc5e;
 }
 .schritteColorSix {
-  color: #ffcaaf;
+  background-color: #ffcaaf;
 }
 .schritteColorSeven {
-  color: #d5e7e3;
+  background-color: #d5e7e3;
 }
 .schritteColorEight {
-  color: #fae8df;
+  background-color: #fae8df;
 }
 /* Common styles for both mobile and desktop */
 .filmeinreichungTopContainer {

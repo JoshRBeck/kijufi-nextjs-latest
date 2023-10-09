@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import styles from "../app/page.module.css";
+import styles from "../app/filmeinreichung.module.css";
 
 const Submission: React.FC = () => {
   const schritte = [
@@ -72,7 +72,7 @@ const Submission: React.FC = () => {
         <div className={styles.schritteWrapper}>
           {schritte.map((step, index) => (
             <div
-              className={`${styles.schritte} ${styles.colorClass}`}
+              className={`${styles.schritte} ${styles[step.colorClass]}`}
               key={index}
             >
               <div className={styles.schritteNummer}>{step.nummer}</div>

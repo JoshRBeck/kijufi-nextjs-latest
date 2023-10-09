@@ -18,28 +18,20 @@ import MPower from "@/images/MPower-e.V..png";
 import Songs from "@/images/Songs-for-Rights.png";
 import IYCE from "@/images/IYCE.png";
 import StadtBibliothek from "@/images/Stadtbibliothek-Berlin-Mitte.png";
-import tiledImage from "@/images/Frame 47.png";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div>
         <div className={styles.tiledContainer}>
-          <Image
-            src={tiledImage}
-            alt="tiled image background"
-            width={tiledImage.width}
-            height={tiledImage.height}
-          />
-          {/* 
           <div className={styles.topTiles}>
             <div className={`${styles.tile1} ${styles.imageContainer}`}>
               <Image
                 src={Chair}
                 alt="chair image"
                 className={styles.chair}
-                width={Chair.width}
-                height={Chair.height}
+                width={90}
+                height={90}
               />
             </div>
             <div className={styles.tile2}></div>
@@ -49,19 +41,18 @@ export default function Home() {
                 src={HeadingNeu}
                 alt="Festival heading image"
                 className={styles.HeadingNeu}
-                width={HeadingNeu.width}
-                height={HeadingNeu.height}
+                width={170}
+                height={70}
               />{" "}
               <Image
                 src={Camera}
                 alt="Camera image"
                 className={styles.Camera}
-                width={Camera.width}
-                height={Camera.height}
+                width={90}
+                height={90}
               />
             </div>
           </div>
-        */}
         </div>
         <Countdown />
         <div className={styles.aboutSection}>
@@ -156,8 +147,8 @@ export default function Home() {
             <Image
               src={MovieCut}
               alt="Movie cut image"
-              width={MovieCut.width}
-              height={MovieCut.height}
+              width={120}
+              height={120}
               className={styles.movieCut}
             />
           </div>
@@ -174,7 +165,9 @@ export default function Home() {
               Presse-Sprecher:innen und Gäste-Betreuer:innen. Du willst
               mitmachen? Melde Dich bei uns und komm‘ vorbei!
             </p>
-            <button type="button">Info Festival Crew</button>
+            <button type="button" className={styles.infoFestivalButton}>
+              Info Festival Crew
+            </button>
           </div>
         </div>
         <div className={styles.mainPageFilmEinreichen}>
@@ -189,7 +182,9 @@ export default function Home() {
             verdient. Wir können es kaum erwarten, die Talente zu sehen, die Sie
             zu unserem Festival mitbringen!
           </p>
-          <button type="button">Filmeinreichung</button>
+          <button type="button" className={styles.FilmeinreichungButton}>
+            Filmeinreichung
+          </button>
         </div>
         <div className={styles.sponsorsContainer}>
           <h4 className={styles.sponsorHeading}>
