@@ -4,10 +4,10 @@ import styles from "../app/page.module.css";
 
 const Countdown: React.FC = () => {
   const [countdownValue, setCountdownValue] = useState("");
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
     const targetDate = new Date("2023-12-08T10:00:00").getTime();
@@ -24,12 +24,17 @@ const Countdown: React.FC = () => {
       const calculatedSeconds = Math.floor(
         (timeRemaining % (1000 * 60)) / 1000
       );
-      const formattedCountdown = `${calculatedDays} Tage ${calculatedHours} Stunden ${calculatedMinutes} Minuten ${calculatedSeconds} Sekunden`;
+      const formattedDays = calculatedDays.toString().padStart(2, "0");
+      const formattedHours = calculatedHours.toString().padStart(2, "0");
+      const formattedMinutes = calculatedMinutes.toString().padStart(2, "0");
+      const formattedSeconds = calculatedSeconds.toString().padStart(2, "0");
 
-      setDays(calculatedDays);
-      setHours(calculatedHours);
-      setMinutes(calculatedMinutes);
-      setSeconds(calculatedSeconds);
+      const formattedCountdown = `${formattedDays} Tage ${formattedHours} Stunden ${formattedMinutes} Minuten ${formattedSeconds} Sekunden`;
+
+      setDays(formattedDays);
+      setHours(formattedHours);
+      setMinutes(formattedMinutes);
+      setSeconds(formattedSeconds);
       setCountdownValue(formattedCountdown);
 
       if (timeRemaining <= 0) {

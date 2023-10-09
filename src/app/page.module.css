@@ -520,14 +520,11 @@
     font-family: "Halcyon Medium", sans-serif;
     font-weight: 700;
     color: #333c3a;
-    font-style: normal;
-    line-height: normal;
   }
   .aboutSection p {
     text-align: center;
     font-family: "Halcyon Medium", sans-serif;
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 0.875rem;
     padding-bottom: 15px;
@@ -538,6 +535,7 @@
     font-weight: 800;
     color: #333c3a;
     padding-bottom: 20px;
+    font-family: "Halcyon Medium", sans-serif;
   }
   .programmButtonAboutSection,
   .FilmeinreichungButton,
@@ -551,6 +549,7 @@
     height: 2.5rem;
     border-style: none;
     box-shadow: 4px 4px 0px rgb(0 0 0);
+    font-family: "Halcyon Medium", sans-serif;
   }
   .freiheitImageContainer {
     display: none;
@@ -562,35 +561,49 @@
   .freiheitTextContainer {
     display: flex;
     flex-direction: row;
+    height: 200px;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
   }
   .freiheitText {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
+  }
+  .freiheitText h2,
+  .freiheitText p,
+  .zusammenheitText h4,
+  .zusammenheitText p {
+    font-family: "Halcyon Medium", sans-serif;
   }
   .zusammenheitContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 500px;
+    height: 300px;
     align-items: center;
+    background-color: #fff;
   }
+
   .zusammenheitImage img {
-    width: 130px;
-    height: 60px;
+    width: 180px;
+    height: 100px;
   }
+
   .zusammenheitText {
-    width: 40vh;
+    width: 50%;
   }
-  .WirSindGrenzenlos1 {
-    height: 50px;
-    width: 50px;
-  }
+
+  .WirSindGrenzenlos1,
   .WirSindGrenzenlos2 {
     height: 50px;
     width: 50px;
   }
+
   .mainPageKontaktContainer {
     display: flex;
     flex-direction: row;
@@ -599,20 +612,25 @@
     background-color: #d5e7e3;
     padding: 5%;
   }
+
   .mainPageKontaktText {
     display: flex;
     flex-direction: column;
     text-align: left;
   }
+
   .mainPageKontaktText h3 {
     padding: 15px;
   }
+
   .mainPageKontaktImage img {
     padding: 5%;
   }
+
   .mainPageKontaktText p {
     padding: 15px;
   }
+
   .mainPageFilmEinreichen {
     display: flex;
     flex-direction: column;
@@ -620,12 +638,15 @@
     text-align: left;
     padding: 5%;
   }
+
   .mainPageFilmEinreichen h4 {
     padding: 15px;
   }
+
   .mainPageFilmEinreichen p {
     padding: 15px;
   }
+
   .FilmeinreichungButton {
     display: flex;
     justify-content: center;
@@ -670,6 +691,7 @@
   line-height: normal;
   letter-spacing: 0.45013rem;
   font-weight: 900;
+  font-family: "Halcyon Medium", sans-serif;
 }
 .countdownText {
   font-size: 0.8em;
@@ -678,4 +700,5 @@
   text-align: center;
   font-weight: 900;
   font-style: normal;
+  font-family: "Halcyon Medium", sans-serif;
 }
