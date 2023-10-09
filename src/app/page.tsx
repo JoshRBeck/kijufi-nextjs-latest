@@ -69,7 +69,7 @@ export default function Home() {
             der Grenzen setzen, aber auch loswerden kann.
           </p>
           <h5 className={styles.aboutWarning}>
-            ⚠️ Achtung! Tickets sind ab Anfang November erhältlich
+            ⚠️ Achtung! Der Ticketverkauf startet Anfang November 2023
           </h5>
           <button type="button" className={styles.programmButtonAboutSection}>
             <Link href="/programm">Programm</Link>
@@ -85,7 +85,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.freiheitText}>
-            <h2> #Fantasie #Miteinander</h2>
+            <h2>#Fantasie #Miteinander</h2>
             <p>
               Was wir brauchen ist: Zusammenhalt, Miteinander und viel Fantasie.
               Also weg mit den Grenzen im Kopf.
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
         <div className={styles.sponsorsContainer}>
           <h4 className={styles.sponsorHeading}>
-            Unsere Partner und Sponsoren
+            Unsere Partner
           </h4>
           {/* <CarouselComponent /> */}
           <Image

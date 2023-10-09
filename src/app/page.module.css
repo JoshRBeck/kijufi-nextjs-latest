@@ -520,15 +520,16 @@
     font-family: "Halcyon Medium", sans-serif;
     font-weight: 700;
     color: #333c3a;
+    font-size: 0.93019rem;
   }
   .aboutSection p {
+    color: #333c3a;
     text-align: center;
     font-family: "Halcyon Medium", sans-serif;
     font-size: 0.75rem;
+    font-style: normal;
     font-weight: 500;
     line-height: 0.875rem;
-    padding-bottom: 15px;
-    color: #333c3a;
   }
   .aboutSection h5 {
     text-align: center;
@@ -536,6 +537,7 @@
     color: #333c3a;
     padding-bottom: 20px;
     font-family: "Halcyon Medium", sans-serif;
+    padding-top: 20px;
   }
   .programmButtonAboutSection,
   .FilmeinreichungButton,
@@ -545,10 +547,11 @@
     align-items: center;
     border-radius: 2.06075rem;
     background: #fff;
-    width: 8rem;
-    height: 2.5rem;
+    width: 7.375rem;
+    height: 1.5625rem;
+    padding: 0.20875rem 0.28238rem;
     border-style: none;
-    box-shadow: 4px 4px 0px rgb(0 0 0);
+    box-shadow: 3px 3px 0px rgb(0 0 0);
     font-family: "Halcyon Medium", sans-serif;
   }
   .freiheitImageContainer {
@@ -564,46 +567,84 @@
     height: 200px;
     width: auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #fff;
+    padding: 5%;
   }
   .freiheitText {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    text-align: left;
   }
   .freiheitText h2,
   .freiheitText p,
   .zusammenheitText h4,
   .zusammenheitText p {
     font-family: "Halcyon Medium", sans-serif;
+    margin: 0;
+  }
+  .freiheitText h2 {
+    text-align: left;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+  .freiheitText p {
+    color: #333c3a;
+    font-family: "Halcyon Medium", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.80769rem; /* 107.693% */
   }
   .zusammenheitContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 300px;
     align-items: center;
     background-color: #fff;
+    padding: 5%;
   }
-
   .zusammenheitImage img {
-    width: 180px;
-    height: 100px;
+    width: 136px;
+    height: 106px;
   }
-
   .zusammenheitText {
     width: 50%;
+    padding: 5%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
   }
-
+  .zusammenheitText h4 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "Halcyon Medium", sans-serif;
+    color: #333c3a;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .zusammenheitText p {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.8125rem;
+    color: #333c3a;
+  }
   .WirSindGrenzenlos1,
   .WirSindGrenzenlos2 {
     height: 50px;
     width: 50px;
   }
-
   .mainPageKontaktContainer {
     display: flex;
     flex-direction: row;
@@ -612,25 +653,42 @@
     background-color: #d5e7e3;
     padding: 5%;
   }
-
   .mainPageKontaktText {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
-
   .mainPageKontaktText h3 {
-    padding: 15px;
+    font-family: "Halcyon Medium", sans-serif;
+    color: #333c3a;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
-
   .mainPageKontaktImage img {
     padding: 5%;
   }
-
   .mainPageKontaktText p {
     padding: 15px;
+    font-family: "Halcyon Medium", sans-serif;
+    color: #333c3a;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.875rem;
+    text-align: left;
   }
-
+  .mehrInfoButton {
+    color: #333c3a;
+    text-align: center;
+    font-family: "Halcyon Medium", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   .mainPageFilmEinreichen {
     display: flex;
     flex-direction: column;
@@ -638,15 +696,24 @@
     text-align: left;
     padding: 5%;
   }
-
   .mainPageFilmEinreichen h4 {
+    color: #333c3a;
     padding: 15px;
+    font-family: "Halcyon Medium", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
-
   .mainPageFilmEinreichen p {
+    color: #333c3a;
     padding: 15px;
+    font-family: "Halcyon Medium", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.875rem; /* 116.667% */
   }
-
   .FilmeinreichungButton {
     display: flex;
     justify-content: center;
@@ -657,6 +724,44 @@
     height: 2.5rem;
     border-style: none;
     box-shadow: 4px 4px 0px rgb(0 0 0);
+    font-family: "Halcyon Medium", sans-serif;
+  }
+  .sponsorsContainer h4 {
+    font-family: "Halcyon Medium", sans-serif;
+    padding-left: 8%;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #333c3a;
+  }
+  .countdownWrapper {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+  }
+  .countdownItem {
+    text-align: center;
+  }
+  .countdownNumber {
+    font-size: 1.86569rem;
+    font-weight: bold;
+    color: #e16848;
+    padding: 5px;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 0.45013rem;
+    font-weight: 900;
+    font-family: "Halcyon Medium", sans-serif;
+  }
+  .countdownText {
+    font-size: 0.62188rem;
+    color: #e16848;
+    padding: 5px;
+    text-align: center;
+    font-weight: 900;
+    font-style: normal;
+    font-family: "Halcyon Medium", sans-serif;
   }
 }
 /* Common styles */
@@ -665,7 +770,6 @@
   background-color: #f5f5f5;
 }
 .downloadButton,
-.mehrInfoButton,
 .filmEinreichenButtonText {
   background-color: #e16848;
   border-radius: 25px;
@@ -674,31 +778,3 @@
   padding: 10px;
 }
 /* Countdown styling */
-.countdownWrapper {
-  display: flex;
-  justify-content: center;
-  background: #fff;
-}
-.countdownItem {
-  text-align: center;
-}
-.countdownNumber {
-  font-size: 2em;
-  font-weight: bold;
-  color: #e16848;
-  padding: 5px;
-  text-align: center;
-  line-height: normal;
-  letter-spacing: 0.45013rem;
-  font-weight: 900;
-  font-family: "Halcyon Medium", sans-serif;
-}
-.countdownText {
-  font-size: 0.8em;
-  color: #e16848;
-  padding: 5px;
-  text-align: center;
-  font-weight: 900;
-  font-style: normal;
-  font-family: "Halcyon Medium", sans-serif;
-}
