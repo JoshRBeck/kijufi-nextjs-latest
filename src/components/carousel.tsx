@@ -7,7 +7,7 @@ import Songs from "@/images/Songs-for-Rights.png";
 import IYCE from "@/images/IYCE.png";
 import StadtBibliothek from "@/images/Stadtbibliothek-Berlin-Mitte.png";
 import styles from "../app/carousel.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
@@ -83,6 +83,12 @@ const CarouselComponent: React.FC = () => {
       transition: { duration: 0.2 },
     },
   };
+
+  useEffect(() => {
+    const timer = setInterval(handleNext, 3000); // 10 seconds
+    return () => clearInterval(timer);
+  }, [currentIndex]);
+
   return (
     <div>
       <div className={styles.carousel}>
