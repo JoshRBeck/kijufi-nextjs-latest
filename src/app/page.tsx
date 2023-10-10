@@ -24,33 +24,11 @@ export default function Home() {
     <main className={styles.main}>
       <div>
         <div className={styles.tiledContainer}>
-          <div className={styles.topTiles}>
-            <div className={`${styles.tile1} ${styles.imageContainer}`}>
-              <Image
-                src={Chair}
-                alt="chair image"
-                className={styles.chair}
-                width={90}
-                height={90}
-              />
-            </div>
+          <div className={`${styles.tile1} ${styles.imageContainer}`}>
             <div className={styles.tile2}></div>
             <div className={styles.tile3}></div>
             <div className={`${styles.tile4} ${styles.imageContainer}`}>
-              <Image
-                src={HeadingNeu}
-                alt="Festival heading image"
-                className={styles.HeadingNeu}
-                width={170}
-                height={70}
-              />{" "}
-              <Image
-                src={Camera}
-                alt="Camera image"
-                className={styles.Camera}
-                width={90}
-                height={90}
-              />
+              <div className={styles.centerImage}></div>
             </div>
           </div>
         </div>

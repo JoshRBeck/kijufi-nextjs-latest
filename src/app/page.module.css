@@ -299,34 +299,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d5e7e3; /* Background color for all tiles */
-    overflow-y: auto; /* Enable vertical scrolling for the tiles */
-    flex-grow: 1; /* Make the tiledContainer fill available vertical space */
-    padding: 20px; /* Add padding for spacing */
-  }
-
-  .topTiles,
-  .bottomTiles {
-    display: flex;
-    width: 100%;
-    height: 40vh; /* Reduce the height of the tiles */
-    justify-content: space-between;
-    flex-grow: 1; /* Make the tiles fill available vertical space */
+    overflow-y: auto;
+    padding: 5%;
   }
 
   .tile1,
   .tile4 {
-    flex-grow: 1; /* Make the tiles expand and fill the available space */
+    flex-grow: 1;
   }
-
   .tile2,
   .tile3 {
-    flex-grow: 1;
-    width: 50%;
+    background-color: #76aea6;
   }
 
   .countdownWrapper {
-    padding: 25px 0; /* Shorthand for padding-top and padding-bottom */
+    padding: 25px 0;
   }
   .aboutSection {
     display: flex;

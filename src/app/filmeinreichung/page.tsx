@@ -24,14 +24,72 @@ export default function Filmeinreichung() {
         </p>
       </div>
 
-      <div className={styles.filmEinreichungCamera}>
-        <Image src={filmEinreichungCamera} alt="old school film photo" />
-        <Image
-          src={polygon1}
-          alt="a triangle that is light"
-          className={styles.polgyon}
-        />
+      <div className={styles.filmEinreichungCameraContainer}>
+        <div className={styles.filmEinreichungCamera}>
+          <Image src={filmEinreichungCamera} alt="old school film photo" />
+        </div>
+        <div className={styles.spotlightContainer}>
+          <div className={styles.spotlight}>
+            <svg
+              width="297"
+              height="161"
+              viewBox="0 0 297 161"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_1260_2009)">
+                <path
+                  d="M4 77L292.473 1.00002L292.473 153L4 77Z"
+                  fill="#D5E7E3"
+                  fill-opacity="0.33"
+                  shape-rendering="crispEdges"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_1260_2009"
+                  x="0.18638"
+                  y="0.455197"
+                  width="296.1"
+                  height="159.627"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="3.26882" />
+                  <feGaussianBlur stdDeviation="1.90681" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_1260_2009"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_1260_2009"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <p className={styles.deadlineText}>DEADLINE</p>
+            <p className={styles.deadlineText}>15 Oktober</p>
+            <div className={styles.spotlightReference}>Dot</div>
+          </div>
+        </div>
       </div>
+
       <div className={styles.filmEinreichungMiddle}>
         <h3>Filmeinreichung</h3>
         <p>
@@ -54,25 +112,12 @@ export default function Filmeinreichung() {
           </button>
         </div>
       </div>
+
       <div className={styles.richtLinienContainer}>
         <h2>Richtlinien für die Einreichung:</h2>
         <p>Alle Genres und Formate sind zugelassen! 🎥</p>
       </div>
       <Submission />
-      <div className={styles.filmClapperContainer}>
-        {/* <Image src={filmClapper} alt="film clapper" /> */}
-        <p className={styles.filmClapperText}>
-          <span className={styles.filmClapperHeading}>
-            Merken Sie sich Ihren Kalender vor:
-          </span>{" "}
-          Die Bewerbungsfrist für die Einreichung Ihres Films ist der 15.
-          Oktober 2023. Reichen Sie Ihre Filme unbedingt vor diesem Datum ein,
-          um für unser spannendes Programm mit talentierten jungen Filmemachern
-          berücksichtigt zu werden! Denkt daran: Die Zukunft des Filmemachens
-          liegt in euren Händen! Reicht eure Filme jetzt ein und lasst eurer
-          Kreativität freien Lauf!
-        </p>
-      </div>
     </>
   );
 }

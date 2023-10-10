@@ -99,13 +99,13 @@ const CarouselComponent: React.FC = () => {
             initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
             animate="visible"
             exit="exit"
+           style={{height:"100%"}}
           >
             <Image
               key={currentIndex}
               src={images[currentIndex].src}
               alt="current image"
-              width={images[currentIndex].width}
-              height={images[currentIndex].height}
+              fill
             />{" "}
           </motion.div>
         </AnimatePresence>

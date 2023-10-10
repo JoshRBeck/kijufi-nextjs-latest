@@ -97,60 +97,63 @@ const Submission: React.FC = () => {
         </button>
         {showDetails && (
           <div className={styles.guidelinesListContainer}>
+            <h3>Teilnahmebedingungen</h3>
             <ol className={styles.guidelinesList}>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
-                  Mehrere Einreichungen:
+                  Einreichungen:
                 </span>{" "}
-                Als junger Regisseur oder Teil eines Teams können Sie bis zu
-                drei Ihrer fertigen Filmarbeiten einreichen. So können Sie Ihre
-                Vielseitigkeit unter Beweis stellen und Ihr Talent in
-                verschiedenen Genres und Formaten zeigen.
+                Pro Regisseur*in oder Filmteam können maximal drei Filme als
+                fertige Arbeit eingereicht werden. Wir freuen uns auf
+                vielfältige und überraschende Einreichungen!
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
                   Filmlänge:
                 </span>{" "}
-                Ihre Filme dürfen nicht länger als 10 Minuten sein. Wir glauben
-                an die Kraft von kurzen Geschichten und möchten jedem eine faire
-                Chance geben, vorgestellt zu werden.
+                Eure Filme sollten nicht länger als 10 Minuten sein. Das gibt
+                uns die Zeit, im Anschluss an das Screening eurer Filme mit euch
+                ins Gespräch zu kommen.
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
                   {" "}
-                  Datum der Fertigstellung der Produktion:
+                  Produktionsjahr:
                 </span>{" "}
-                Für das kommende Festival nehmen wir Filme an, die nach dem 1.
-                Januar 2022 fertiggestellt wurden. Damit stellen wir sicher,
-                dass wir frische und zeitgemäße Inhalte von unseren jungen
-                Filmemachern präsentieren können.
+                Für das Festival nehmen wir Filme an, die nach dem 1. Januar
+                2022 fertiggestellt wurden. Uns ist es wichtig, dass ihr als
+                Filmemacher:innen eure Filme persönlich bei dem Festival
+                präsentiert. Bei aktuellen Produktionen klappt das meistens am
+                besten.
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
-                  Altersvoraussetzung:
+                  Altersgrenze:
                 </span>{" "}
-                Um für die Einreichung in Frage zu kommen, dürfen die Regisseure
-                zum Zeitpunkt der Fertigstellung des Films nicht älter als 25
-                Jahre sein. Wir ermutigen unsere jungen Filmemacher, sich zu
-                beteiligen und der Welt des Films ihren Stempel aufzudrücken.
+                Wir sind ein Festival von jungen Menschen für junge Menschen.
+                Wir zeigen in unserem Kurzfilmprogramm deshalb ausschließlich
+                Filme von Filmemacher:innen, die nicht älter als 25 Jahre sind.
+                Selbstverständlich dürfen euch Erwachsene aber bei eurer
+                Produktion unterstützt habt.
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
                   Dateiformate:
                 </span>{" "}
-                Sie können Ihre Filme in jedem gängigen Dateiformat einreichen.
-                Unser Einreichungsportal ermöglicht ein einfaches Hochladen von
-                Dateien und gewährleistet so einen problemlosen Ablauf für alle
-                Teilnehmer.
+                Ihr könnt eure Filme über das Einreichportal in jedem gängigen
+                Dateiformat einreichen. Falls euer Film für das Programm
+                ausgewählt wird, aber die Qualität des Sichtungsvideos für die
+                große Kinoleinwand nicht ausreicht, bitten wir euch ggfls., uns
+                den Film in geeigneter Auflösung zur Verfügung zu stellen.
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
                   Kostenlose Anmeldung:{" "}
                 </span>{" "}
-                Wir glauben an die Förderung einer kreativen Gemeinschaft ohne
-                Barrieren, deshalb ist die Einreichung von Filmen völlig
-                kostenlos. Füllen Sie einfach die Registrierung auf unserem
-                benutzerfreundlichen filmfestivals4u-Anmeldeportal aus.
+                Die Registrierung und Einreichung eurer Filme ist kostenlos.
+                Bitte nutze dafür die Einreichplatzform www.filmfestivals4u.net.
+                Ihr könnt eure Filme dort übrigens auch noch bei anderen Kinder-
+                und Jugendfilmfestivals einreichen.
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
@@ -164,15 +167,16 @@ const Submission: React.FC = () => {
               </li>
               <li className={styles.guidelinesListItems}>
                 <span className={styles.guidelinesListHeadlines}>
-                  Festival-Vorführung:
+                  Festival-Teilnahme:
                 </span>{" "}
-                Wenn Ihr Film für unser Festivalprogramm ausgewählt wird, müssen
-                mindestens zwei Filmemacher aus Ihrem Team bei der Vorführung
-                anwesend sein. Aber keine Sorge, wir haben für Sie vorgesorgt!
-                Die Reisekosten, einschließlich der Unterkunft, werden für die
-                teilnehmenden Filmemacher übernommen. Für Teilnehmer unter 16
-                Jahren können wir dieses Angebot auch auf eine Begleitperson
-                ausweiten.
+                Wenn euer Film für das Festivalprogramm ausgewählt wird,
+                garantiert ihr, dass mindestens zwei Mitglieder des Filmteams am
+                gesamten Festival von Fr, 8.12. bis So, 10.12. teilnehmen und
+                für ein Bühnengespräch im Anschluss an die Vorführung eures
+                Films zur Verfügung stehen. Anfallende Reisekosten für 2
+                Personen einschließlich Unterkunft zahlt das Festival. Für
+                Teilnehmende unter 16 Jahren übernehmen wir auf Wunsch auch die
+                Kosten für eine Begleitperson.
               </li>
             </ol>
           </div>
