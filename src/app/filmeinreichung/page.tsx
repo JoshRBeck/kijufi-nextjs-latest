@@ -12,7 +12,8 @@ export default function Filmeinreichung() {
     <>
       <div className={styles.filmeinreichungTopContainer}>
         <h1>Reicht eure Filme ein und kommt zum Festival</h1>
-        <p>
+        <div className={styles.desktop}>
+          <p>
           Ihr habt einen Kurzfilm produziert, den ihr auf dem Festival zeigen
           wollt? Dann reicht ihn bis zum 15. Oktober 2023 bei uns ein.
         </p>
@@ -22,6 +23,7 @@ export default function Filmeinreichung() {
           persönlich eurem Publikum zu präsentieren. Wenn euer Film ausgewählt
           wird, übernehmen wir die Reisekosten.
         </p>
+          </div>
       </div>
 
       <div className={styles.filmEinreichungCameraContainer}>
