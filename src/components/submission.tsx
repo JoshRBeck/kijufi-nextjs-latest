@@ -9,56 +9,56 @@ const Submission: React.FC = () => {
       nummer: "01",
       name: "Mehrere Einreichungen",
       beschreibung:
-        "Sie können bis zu drei Ihrer fertigen Filmarbeiten einreichen",
+        "Ihr könnt bis zu drei eurer fertigen Filmarbeiten einreichen.",
       colorClass: "schritteColorOne",
     },
     {
       nummer: "02",
       name: "Filmlänge",
       beschreibung:
-        "Ihre Filme dürfen eine Länge von 10 Minuten nicht überschreiten.",
+        "Eure Filme dürfen eine Länge von 10 Minuten nicht überschreiten.",
       colorClass: "schritteColorTwo",
     },
     {
       nummer: "03",
-      name: "Datum der Fertigstellung der Produktion",
+      name: "Produktionsjahr",
       beschreibung:
-        "Wir nehmen Filme an, die nach dem 1. Januar fertiggestellt wurden.",
+        "Wir nehmen Filme an, die 2022 oder 2023 fertig gestellt wurden.",
       colorClass: "schritteColorThree",
     },
     {
       nummer: "04",
-      name: "Altersvoraussetzung",
+      name: "Altersgrenze",
       beschreibung:
-        "Sie dürfen zum Zeitpunkt der Fertigstellung des Films nicht älter als 25 Jahre sein",
+        "Kinder, Jugendliche und junge Erwachsene bis 25 Jahre können ihre Filme einreichen.",
       colorClass: "schritteColorFour",
     },
     {
       nummer: "05",
       name: "Dateiformate",
       beschreibung:
-        "Sie können Ihre Filme in jedem gängigen Dateiformat einreichen",
+        "Ihr könnt eure Filme in jedem gängigen Dateiformat einreichen.",
       colorClass: "schritteColorFive",
     },
     {
       nummer: "06",
-      name: "Kostenlose",
+      name: "Kostenlose Registerierung",
       beschreibung:
-        "Registrierung Die Einreichung von Filmen ist völlig kostenlos",
+        "Die Anmeldung und Einreichung eurer Filme über die Plattform filmfestivals4u.net ist kostenlos.",
       colorClass: "schritteColorSix",
     },
     {
       nummer: "07",
       name: "Rechte-Zusicherung",
       beschreibung:
-        "Sie versichern uns, dass Sie alle Bild- und Tonrechte an Ihrem Werk ohne Einschränkungen besitzen",
+        "Ihr bestätigt uns, dass ihr ohne Einschränkungen alle Bild- und Tonrechte an eurem Film besitzt.",
       colorClass: "schritteColorSeven",
     },
     {
       nummer: "08",
-      name: "Teilnahme am Festival",
+      name: "Festival-Teilnahme",
       beschreibung:
-        "Wenn Sie ausgewählt werden, benötigen wir die Anwesenheit von mindestens zwei Filmemachern aus Ihrem Team",
+        "Wenn euer Film ausgewählt wird, nehmen garantiert mind. zwei Mitglieder eures Filmteams am Festival teil.",
       colorClass: "schritteColorEight",
     },
   ];
