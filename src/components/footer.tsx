@@ -36,16 +36,16 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.footerBottomRight}>
           <p className={styles.footerText}>
-            Gemeinsam Grenzenlos - das Kinderrechte-Filmfestival 2023 is a
-            project of the Landesverband Kinder- und Jugendfilm Berlin e.V.
-            (Kijufi). The implementation is funded within the framework of the
-            programme Das Zukunftspaket. Future Package. The Future Package for
-            Movement, Culture and Health is a programme of the Federal Ministry
-            for Family Affairs, Senior Citizens, Women and Youth (BMFSFJ). It is
-            implemented by the Gesellschaft für soziale Unternehmensberatung
-            (gsub) and the SPI Foundation. The programme part &ldquo;Child and
-            Youth Participation in the Future Package&rdquot; is the
-            responsibility of the German Children and Youth Foundation (DKJS).
+            Gemeinsam Grenzenlos – das Kinderrechte-Filmfestival 2023 ist ein
+            Projekt des Landesverbands Kinder- und Jugendfilm Berlin e.V.
+            (kijufi). Die Durchführung wird gefördert im Rahmen des Programms
+            Das Zukunftspaket. Das Zukunftspaket für Bewegung, Kultur und
+            Gesundheit ist ein Programm des Bundesministeriums für Familie,
+            Senioren, Frauen und Jugend (BMFSFJ). Es wird umgesetzt von der
+            Gesellschaft für soziale Unternehmensberatung (gsub) und der
+            Stiftung SPI. Der Programmteil „Kinder- und Jugendbeteiligung im
+            Zukunftspaket“ wird verantwortet von der Deutschen Kinder- und
+            Jugendstiftung (DKJS).
           </p>
         </div>
       </div>
