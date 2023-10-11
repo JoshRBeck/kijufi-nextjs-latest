@@ -216,6 +216,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0;
+    margin-top: 20px;
   }
   .mehrInfoButton {
     color: #fff;
