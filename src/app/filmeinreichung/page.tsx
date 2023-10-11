@@ -12,20 +12,19 @@ export default function Filmeinreichung() {
     <>
       <div className={styles.filmeinreichungTopContainer}>
         <h1>Reicht eure Filme ein und kommt zum Festival</h1>
-        <div className={styles.desktop}>
+        <div className={styles.desktopContainer}>
           <p>
-          Ihr habt einen Kurzfilm produziert, den ihr auf dem Festival zeigen
-          wollt? Dann reicht ihn bis zum 15. Oktober 2023 bei uns ein.
-        </p>
-        <p>
-          Wichtigste Bedingung: Mindestens zwei Personen aus eurem Filmteam sind
-          bereit, von Freitag bis Sonntag am Festival teilzunehmen und den Film
-          persönlich eurem Publikum zu präsentieren. Wenn euer Film ausgewählt
-          wird, übernehmen wir die Reisekosten.
-        </p>
-          </div>
+            Ihr habt einen Kurzfilm produziert, den ihr auf dem Festival zeigen
+            wollt? Dann reicht ihn bis zum 15. Oktober 2023 bei uns ein.
+          </p>
+          <p>
+            Wichtigste Bedingung: Mindestens zwei Personen aus eurem Filmteam
+            sind bereit, von Freitag bis Sonntag am Festival teilzunehmen und
+            den Film persönlich eurem Publikum zu präsentieren. Wenn euer Film
+            ausgewählt wird, übernehmen wir die Reisekosten.
+          </p>
+        </div>
       </div>
-
       <div className={styles.filmEinreichungCameraContainer}>
         <div className={styles.filmEinreichungCamera}>
           <Image src={filmEinreichungCamera} alt="old school film photo" />
@@ -87,20 +86,31 @@ export default function Filmeinreichung() {
             </svg>
             <p className={styles.deadlineText}>DEADLINE</p>
             <p className={styles.deadlineText}>15 Oktober</p>
-            <div className={styles.spotlightReference}>Dot</div>
+            <div className={styles.filmeEinreichenButtonContainerOne}>
+              <button type="button" className={styles.filmEinreichenButton}>
+                <Link
+                  href="https://www.filmfestivals4u.net/einreichung.php?id=44"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className={styles.filmEinreichenButtonText}>
+                    Ihren Film einreichen
+                  </p>
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
       <div className={styles.filmEinreichungMiddle}>
-        <h3>Filmeinreichung</h3>
+        {/* <h3>Filmeinreichung</h3>
         <p>
           Ihr wollt, dass wir euren Kurzfilm im Festival-Programm zeigen? Die
           Film-Einreichung ist kostenlos und erfolgt über das Einreichportal
           filmfestivals4u.
         </p>
-        <p>Einsendeschluss ist der 15. Oktober 2023!</p>
-        <div className={styles.filmeEinreichenButtonContainer}>
+        <p>Einsendeschluss ist der 15. Oktober 2023!</p> */}
+        <div className={styles.filmeEinreichenButtonContainerTwo}>
           <button type="button" className={styles.filmEinreichenButton}>
             <Link
               href="https://www.filmfestivals4u.net/einreichung.php?id=44"
@@ -114,12 +124,30 @@ export default function Filmeinreichung() {
           </button>
         </div>
       </div>
-
       <div className={styles.richtLinienContainer}>
         <h2>Richtlinien für die Einreichung:</h2>
         <p>Alle Genres und Formate sind zugelassen! 🎥</p>
       </div>
       <Submission />
+      <div className={styles.bottomContainer}>
+        <h3>Filmeinreichung</h3>
+        <p>
+          Ihr wollt, dass wir euren Kurzfilm im Festival-Programm zeigen? Die
+          Film-Einreichung ist kostenlos und erfolgt über das Einreichportal
+          filmfestivals4u.
+        </p>
+        <p>Einsendeschluss ist der 15. Oktober 2023!</p>
+      </div>{" "}
+      <div className={styles.buttonAndText}>
+        
+        <button type="button" className={styles.filmEinreichenButton}>
+          Hier Film Einreichen
+        </button>
+        <p className={styles.bottomContainerText}>
+          Über diese Schaltfläche werdet ihr auf die externe Seite von
+          filmfestivals4u weitergeleitet.
+        </p>
+      </div>
     </>
   );
 }

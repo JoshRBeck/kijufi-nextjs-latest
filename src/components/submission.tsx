@@ -85,16 +85,19 @@ const Submission: React.FC = () => {
         </div>
       </div>
       <div className={styles.mehrInfoButtonContainer}>
-        <hr className={styles.horizontalRule}></hr>
+        <div className={styles.infoButtonAndHr}>
+
+        {/* <hr className={styles.horizontalRule}></hr> */}
         <button
           type="button"
           onClick={toggleDetails}
           className={styles.mehrInfoButton}
-        >
+          >
           {showDetails
             ? "Weniger Einzelheiten zu den Bedingungen für die Einreichung"
             : "Weitere Details über die Bedingungen für die Einreichung"}
         </button>
+            </div>
         {showDetails && (
           <div className={styles.guidelinesListContainer}>
             <h3>Teilnahmebedingungen</h3>
