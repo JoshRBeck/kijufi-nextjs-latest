@@ -182,8 +182,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 10.2rem; /* Set a maximum width to prevent excessive growth */
-    flex: 1; /* Allow items to grow equally within the container */
+    max-width: 10.2rem;
   }
   .schritteNummer {
     color: #333c3a;
@@ -233,7 +232,7 @@
     line-height: 150%;
     border-radius: 0.74219rem;
     text-align: inherit;
-    width: 50%;
+    width: 75%;
   }
   .guidelinesListContainer {
     background-color: #d5e7e3;
@@ -301,6 +300,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   .bottomContainerText {
     color: #333c3a;
@@ -314,6 +314,16 @@
     text-align: center;
     margin-bottom: 5rem;
     margin-top: 2rem;
+    z-index: 4;
+  }
+  .backgroundSvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    pointer-events: none;
   }
 }
 @media (max-width: 700px) {
@@ -567,22 +577,22 @@
   }
 }
 .schritteColorOne {
-  background-color: #5ba092;
+  background-color: rgba(91, 160, 146, 0.52);
 }
 .schritteColorTwo {
-  background-color: #f6cc5e;
+  background-color: rgba(246, 204, 94, 0.4);
 }
 .schritteColorThree {
-  background-color: #e16848;
+  background-color: rgba(225, 104, 72, 0.6);
 }
 .schritteColorFour {
-  background-color: #5ba092;
+  background-color: rgba(91, 160, 146, 0.26);
 }
 .schritteColorFive {
-  background-color: #f6cc5e;
+  background-color: rgba(246, 204, 94, 0.62);
 }
 .schritteColorSix {
-  background-color: #ffcaaf;
+  background-color: rgba(213, 231, 227, 0.38);
 }
 .schritteColorSeven {
   background-color: #d5e7e3;
@@ -604,3 +614,4 @@
 .filmeinreichungTopContainer p {
   padding-bottom: 10px;
 }
+  
