@@ -62,10 +62,10 @@ export default function Home() {
       <div className={styles.freiheitTextContainer}>
         <div className={styles.freiheitImage}>
           <Image
-            src={CoolKids1.src} // Use .src to access the image source
+            src={CoolKids1.src} 
             alt="cool kids research"
-            width={CoolKids1.width} // Use .width to set the width
-            height={CoolKids1.height} // Use .height to set the height
+            width={CoolKids1.width} 
+            height={CoolKids1.height} 
           />
         </div>
         <div className={styles.freiheitText}>
@@ -79,19 +79,19 @@ export default function Home() {
       <div className={styles.freiheitImageContainer}>
         <div>
           <Image
-            src={WirSindGrenzenlos1.src} // Use .src to access the image source
+            src={WirSindGrenzenlos1.src} 
             alt="We are borderless"
-            width={WirSindGrenzenlos1.width} // Use .width to set the width
-            height={WirSindGrenzenlos1.height} // Use .height to set the height
+            width={WirSindGrenzenlos1.width} 
+            height={WirSindGrenzenlos1.height} 
             className={styles.WirSindGrenzenlos1}
           />
         </div>
         <div>
           <Image
-            src={gemeinsamgrenzenlos.src} // Use .src to access the image source
+            src={gemeinsamgrenzenlos.src} 
             alt="We are borderless"
-            width={gemeinsamgrenzenlos.width} // Use .width to set the width
-            height={gemeinsamgrenzenlos.height} // Use .height to set the height
+            width={gemeinsamgrenzenlos.width} 
+            height={gemeinsamgrenzenlos.height} 
             className={styles.gemeinsamgrenzenlos}
           />
         </div>

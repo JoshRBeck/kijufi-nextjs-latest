@@ -283,35 +283,29 @@
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    flex-direction: row;
+  }
+  .tile2,
+  .tile3,
+  .tile1,
+  .tile4,
+  .centerImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
   }
   .tile2,
   .tile3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #d5e7e361;
-    flex-shrink: 0;
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
   }
   .tile1,
   .tile4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #fafcfb;
-    flex-shrink: 0;
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
   }
   .centerImage {
-    /* background-color: blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     max-width: 100%;
     max-height: 100%;
@@ -329,7 +323,6 @@
     height: 150px; /* Adjust the height as needed */
     color: Black;
   }
-
   .title {
     font-family: "Halcyon Black", sans-serif;
     font-size: 5em;
@@ -352,15 +345,15 @@
     background: #fff;
     margin-bottom: 15px;
   }
-  .countdownItem {
+  .countdownItem,
+  .countdownNumber,
+  .countdownText {
     text-align: center;
   }
   .countdownNumber {
     font-size: 3.751rem;
-    font-weight: bold;
     color: #e16848;
     padding: 5px;
-    text-align: center;
     line-height: normal;
     letter-spacing: 0.45013rem;
     font-weight: 900;
@@ -370,9 +363,7 @@
     font-size: 1.25031rem;
     color: #e16848;
     padding: 5px;
-    text-align: center;
     font-weight: 900;
-    font-style: normal;
     font-family: "Halcyon Medium", sans-serif;
   }
   .aboutSection {
@@ -387,31 +378,23 @@
   .aboutSection p,
   .aboutSection h5 {
     color: #333c3a;
-    font-family: "Halcyon Black", sans-serif;
+    font-family: "Halcyon Medium", sans-serif;
   }
   .aboutSection h2 {
     padding-bottom: 15px;
-    font-family: "Halcyon Medium", sans-serif;
     font-weight: 700;
-    color: #333c3a;
     font-size: 1.7rem;
-    font-style: normal;
-    line-height: normal;
   }
   .aboutSection p {
-    color: #333c3a;
     text-align: center;
-    font-family: "Halcyon Medium", sans-serif;
     font-size: 0.9rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 2.34375rem */
+    line-height: 150%;
   }
   .aboutSection h5 {
     text-align: center;
     font-family: "Halcyon Black", sans-serif;
     font-size: 0.9rem;
-    font-style: normal;
     font-weight: 900;
     line-height: 150%;
     padding: 15px 0 10px;
@@ -540,25 +523,21 @@
     color: #333c3a;
     font-family: "Halcyon Medium", sans-serif;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
   }
   .mainPageKontaktText p {
     color: #333c3a;
     font-family: "Halcyon Medium", sans-serif;
-    font-style: normal;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: normal;
-    font-size: 0.9rem;
   }
   .mainPageKontaktText :nth-child(4) {
     color: #333c3a;
     font-family: "Halcyon Medium", sans-serif;
-    font-style: normal;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: normal;
-    font-size: 0.8rem;
   }
   .infoFestivalButton {
     margin-top: 15px;
@@ -577,21 +556,21 @@
     padding: 10%;
     flex-direction: column;
   }
-  .mainPageFilmEinreichen h4 {
+  .mainPageFilmEinreichen h4,
+  .mainPageFilmEinreichen p {
     color: #333c3a;
-    text-align: left;
     font-family: "Halcyon Medium", sans-serif;
-    font-size: 1.5rem;
     font-style: normal;
+  }
+  .mainPageFilmEinreichen h4 {
+    text-align: left;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 20px;
   }
   .mainPageFilmEinreichen p {
-    color: #333c3a;
-    font-family: "Halcyon Medium", sans-serif;
     font-size: 0.9rem;
-    font-style: normal;
     font-weight: 500;
     padding-bottom: 15px;
   }
@@ -600,7 +579,7 @@
     background: #d5e7e3;
     width: 7.8rem;
     height: 1.5rem;
-    border-style: none;
+    border: none;
     box-shadow: 4px 2px 0px rgb(0 0 0);
   }
 }
@@ -677,29 +656,27 @@
     align-items: center;
     padding: 5%;
   }
+  .aboutSection h2,
+  .aboutSection p,
+  .aboutSection h5 {
+    color: #333c3a;
+    font-family: "Halcyon Medium", sans-serif;
+  }
   .aboutSection h2 {
     padding: 15px;
-    font-family: "Halcyon Medium", sans-serif;
     font-weight: 700;
-    color: #333c3a;
     font-size: 0.93019rem;
   }
   .aboutSection p {
-    color: #333c3a;
     text-align: center;
-    font-family: "Halcyon Medium", sans-serif;
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 0.875rem;
   }
   .aboutSection h5 {
     text-align: center;
     font-weight: 800;
-    color: #333c3a;
-    padding-bottom: 20px;
-    font-family: "Halcyon Medium", sans-serif;
-    padding-top: 20px;
+    padding: 20px 0;
   }
   .programmButtonAboutSection,
   .FilmeinreichungButton,
@@ -711,7 +688,6 @@
     background: #fff;
     width: 7.375rem;
     height: 1.5625rem;
-    padding: 0.20875rem 0.28238rem;
     border-style: none;
     box-shadow: 3px 3px 0px rgb(0 0 0);
     font-family: "Halcyon Medium", sans-serif;
@@ -719,93 +695,47 @@
   .freiheitImageContainer {
     display: none;
   }
-  .freiheitTextContainer img {
+  .freiheitTextContainer img,
+  .zusammenheitImage img {
     width: 106px;
     height: 106px;
   }
-  .freiheitTextContainer {
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-    width: auto;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 5%;
-  }
-  .freiheitText {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    text-align: left;
-  }
-  .freiheitText h2,
-  .freiheitText p,
-  .zusammenheitText h4,
-  .zusammenheitText p {
-    font-family: "Halcyon Medium", sans-serif;
-    margin: 0;
-  }
-  .freiheitText h2 {
-    text-align: left;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 25px;
-    padding-bottom: 5px;
-  }
-  .freiheitText p {
-    color: #333c3a;
-    font-family: "Halcyon Medium", sans-serif;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 0.80769rem;
-  }
+  .freiheitTextContainer,
   .zusammenheitContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 300px;
     align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     padding: 5%;
   }
-  .zusammenheitImage img {
-    width: 136px;
-    height: 106px;
-  }
+  .freiheitText,
   .zusammenheitText {
-    width: 50%;
-    padding: 5%;
-    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
   }
+  .freiheitText h2,
   .zusammenheitText h4 {
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     font-family: "Halcyon Medium", sans-serif;
-    color: #333c3a;
-    text-align: center;
-    padding-bottom: 10px;
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
   }
+  .freiheitText p,
   .zusammenheitText p {
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 0.8125rem;
     color: #333c3a;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.80769rem;
+    text-align: left;
+    padding-bottom: 5px;
   }
-  .WirSindGrenzenlos1,
-  .WirSindGrenzenlos2 {
-    height: 50px;
-    width: 50px;
+  .zusammenheitContainer {
+    height: 300px;
+    padding-bottom: 10px;
   }
   .mainPageKontaktContainer {
     display: flex;
@@ -823,9 +753,7 @@
   .mainPageKontaktText h3 {
     font-family: "Halcyon Medium", sans-serif;
     color: #333c3a;
-    text-align: center;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
@@ -837,7 +765,6 @@
     font-family: "Halcyon Medium", sans-serif;
     color: #333c3a;
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 0.875rem;
     text-align: left;
@@ -864,7 +791,6 @@
     padding: 15px;
     font-family: "Halcyon Medium", sans-serif;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
@@ -873,9 +799,8 @@
     padding: 15px;
     font-family: "Halcyon Medium", sans-serif;
     font-size: 0.75rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: 0.875rem; /* 116.667% */
+    line-height: 0.875rem;
   }
   .FilmeinreichungButton {
     display: flex;
@@ -883,11 +808,15 @@
     align-items: center;
     border-radius: 2.06075rem;
     background: #d5e7e3;
-    width: 8rem;
-    height: 2.5rem;
+    width: 7rem;
+    height: 1.5rem;
     border-style: none;
     box-shadow: 4px 4px 0px rgb(0 0 0);
     font-family: "Halcyon Medium", sans-serif;
+    margin-left: 10px;
+  }
+  .infoFestivalButton {
+    margin-left: 10px;
   }
   .sponsorsContainer {
     background-color: #fff;
@@ -943,4 +872,3 @@
   font-size: 1.2em;
   padding: 10px;
 }
-/* Countdown styling */
